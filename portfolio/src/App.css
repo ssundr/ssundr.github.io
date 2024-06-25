@@ -163,6 +163,19 @@ h2 {
   overflow: hidden; /* Ensure the image doesn't overflow the card */
 }
 
+.course-card::before {
+  content: attr(data-number);
+  display: none;
+  font-weight: bold;
+}
+
+.course-card:hover p {
+  display: none;
+}
+
+.course-card:hover::before {
+  display: block;
+}
 
 /* Current Projects Section */
 

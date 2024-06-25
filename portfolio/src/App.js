@@ -157,18 +157,18 @@ function App() {
   ];
 
   const coursework = [
-    "Data Structures",
-    "Artificial Intelligence",
-    "Database Systems",
-    "Statistics & Probability",
-    "Statistical Modeling",
-    "Discrete Structures",
-    "Data Science Discovery",
-    "Computer Systems",
-    "Software Design Lab",
-    "Programming Methodologies in C++",
+    { name: "Data Structures", number: "CS 225" },
+    { name: "Artificial Intelligence", number: "CS 440" },
+    { name: "Database Systems", number: "CS 411" },
+    { name: "Statistics & Probability 1", number: "STAT 400" },
+    { name: "Statistical Modeling", number: "STAT 425" },
+    { name: "Discrete Structures", number: "CS 173" },
+    { name: "Data Science Discovery", number: "CS 107" },
+    { name: "Computer Systems", number: "CS 340" },
+    { name: "Software Design Lab", number: "CS 222" },
+    { name: "Programming Methodologies in C++", number: "CS 128" },
   ];
-
+  
   const projects = [
     {
       title: "Restaurant Recommender",
@@ -405,8 +405,12 @@ function App() {
         <h2>Relevant Coursework</h2>
         <div className="coursework-container">
           {coursework.map((course, index) => (
-            <div className="course-card" key={index}>
-              <p>{course}</p>
+            <div
+              className="course-card"
+              key={index}
+              data-number={course.number}
+            >
+              <p>{course.name}</p>
             </div>
           ))}
         </div>
