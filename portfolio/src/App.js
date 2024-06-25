@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import { SiDjango, SiTensorflow, SiPycharm, SiFlask, SiPandas, SiKeras, SiTypescript, SiNumpy} from 'react-icons/si';
+import { SiDjango, SiTensorflow, SiPycharm, SiFlask, SiPandas, SiKeras, SiTypescript, SiNumpy, SiOpencv} from 'react-icons/si';
 import {
   FaJsSquare,
   FaHtml5,
@@ -15,6 +15,7 @@ import {
   FaGitAlt,
   FaCuttlefish,
   FaDiceD20,
+  FaDocker,
 } from "react-icons/fa";
 
 import "./App.css"; // Import your CSS file for styling
@@ -44,8 +45,10 @@ function App() {
     { name: "React", icon: <FaReact /> }, // React added
     { name: "Flask", icon: <SiFlask />},
     { name: "VSCode", icon: <FaCode /> }, // VSCode added
+    { name: "Docker", icon: <FaDocker />}, 
     { name: "Git", icon: <FaGitAlt /> }, // Git added
     { name: "TensorFlow", icon: <SiTensorflow /> }, // TensorFlow added
+    { name: "Opencv", icon: <SiOpencv />},
     { name: "Keras", icon: <SiKeras /> }, // Keras added
     { name: "Pandas", icon: <SiPandas /> }, // Pandas added
     { name: "GANs", icon: <FaDiceD20 /> }, // GANs added
