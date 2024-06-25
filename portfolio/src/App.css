@@ -217,6 +217,7 @@ h2 {
 .project-card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project-card {

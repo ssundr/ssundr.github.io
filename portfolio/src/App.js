@@ -355,6 +355,7 @@ function App() {
         </h1>
         <div class="about-me-card">
           <div class="card-content">
+            <h3>Hi, I'm Sneha.</h3>
             <p>
               I'm a student at the University of Illinois Urbana-Champaign
               currently pursuing a Bachelor of Science in Statistics & Computer
