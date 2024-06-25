@@ -37,6 +37,12 @@
   }
 }
 
+/* profile picture */
+.profile-picture {
+  width: 30%;
+  height: auto;
+}
+
 /* tech stack */
 
 .tech-stack {
