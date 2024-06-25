@@ -56,12 +56,77 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1>
-      <Typical
-        steps={['welcome to my portfolio website :)', 1000]}
-        loop={Infinity}
-        wrapper="span"
-      />
-    </h1>
+  <Typical
+    steps={[
+      'W', 100,
+      'We', 100,
+      'Wel', 100,
+      'Welc', 100,
+      'Welco', 100,
+      'Welcom', 100,
+      'Welcome', 100,
+      'Welcome ', 100,
+      'Welcome t', 100,
+      'Welcome to', 100,
+      'Welcome to ', 100,
+      'Welcome to m', 100,
+      'Welcome to my', 100,
+      'Welcome to my ', 100,
+      'Welcome to my p', 100,
+      'Welcome to my po', 100,
+      'Welcome to my por', 100,
+      'Welcome to my port', 100,
+      'Welcome to my portf', 100,
+      'Welcome to my portfo', 100,
+      'Welcome to my portfol', 100,
+      'Welcome to my portfoli', 100,
+      'Welcome to my portfolio', 100,
+      'Welcome to my portfolio ', 100,
+      'Welcome to my portfolio w', 100,
+      'Welcome to my portfolio we', 100,
+      'Welcome to my portfolio web', 100,
+      'Welcome to my portfolio webs', 100,
+      'Welcome to my portfolio websi', 100,
+      'Welcome to my portfolio websit', 100,
+      'Welcome to my portfolio website', 100,
+      'Welcome to my portfolio website ', 100,
+      'Welcome to my portfolio website :', 100,
+      'Welcome to my portfolio website :)', 1000,
+      'I', 100,
+      'It', 100,
+      "It'", 100,
+      "It's", 100,
+      "It's ", 100, 
+      "It's g", 100,
+      "It's gr", 100, 
+      "It's gre", 100,
+      "It's grea", 100, 
+      "It's great", 100,
+      "It's great ", 100,
+      "It's great t", 100,
+      "It's great to", 100, 
+      "It's great to ", 100,
+      "It's great to h", 100,
+      "It's great to ha", 100,
+      "It's great to hav", 100, 
+      "It's great to have", 100,
+      "It's great to have ", 100,
+      "It's great to have y", 100, 
+      "It's great to have yo", 100, 
+      "It's great to have you", 100,
+      "It's great to have you ", 100, 
+      "It's great to have you h", 100, 
+      "It's great to have you he", 100, 
+      "It's great to have you her", 100, 
+      "It's great to have you here", 100, 
+      "It's great to have you here!", 1000
+    ]}
+    loop={Infinity}
+    wrapper="span"
+  />
+</h1>
+
+
         <p>Computer Science & Statistics Major at the University of Illinois</p>
         <p>Loves nature and the color green</p>
       </header>
