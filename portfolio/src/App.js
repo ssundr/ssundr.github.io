@@ -49,12 +49,11 @@ import summarizer from "./images/summarizer.png";
 import generatedFaces from "./images/generated-faces.png";
 
 // resume
-import resume from "./files/sneha_resume.pdf"
+import resume from "./files/sneha_resume.pdf";
 
 // add download button for research paper here
 
 function App() {
-
   const techStack = [
     {
       name: "JavaScript",
@@ -63,7 +62,7 @@ function App() {
     },
     {
       name: "npm",
-      icon: <FaNpm />, 
+      icon: <FaNpm />,
       url: "https://www.npmjs.com",
     },
     {
@@ -157,21 +156,24 @@ function App() {
       title: "Software Engineering Intern",
       company: "Arrcus, Inc",
       date: "Summer 2024",
-      description: "I utilized Python libraries such as pexpect and paramiko to automate SSH connections to devices, parse error messages, and implemented multithreading for efficient parsing of JSON files to collect device information for numerous devices.",
+      description:
+        "I utilized Python libraries such as pexpect and paramiko to automate SSH connections to devices, parse error messages, and implemented multithreading for efficient parsing of JSON files to collect device information for numerous devices.",
       logo: companyLogoX,
     },
     {
       title: "Data Science Discovery Course Assistant",
       company: "University of Illinois Urbana-Champaign",
       date: "Jan 2024 - Present",
-      description: "I fostered an interactive learning environment during lab sessions by encouraging student participation and providing hands-on guidance to enhance comprehension of course material, and offered support during regular office hours, where I addressed individual questions, clarified concepts, and provided additional resources to aid students in their academic progress.",
+      description:
+        "I fostered an interactive learning environment during lab sessions by encouraging student participation and providing hands-on guidance to enhance comprehension of course material, and offered support during regular office hours, where I addressed individual questions, clarified concepts, and provided additional resources to aid students in their academic progress.",
       logo: companyLogoZ,
     },
     {
       title: "Research Intern @ iPRoBe Lab",
       company: "Michigan State University",
       date: "Summer 2022",
-      description: "I worked with Dr. Arun Ross to develop an emotion-recognition algorithm using PyTorch, conducted data analysis on model outcomes to evaluate its precision in relation to established models, and performed data analysis on results of the model to test its accuracy compared to existing models.",
+      description:
+        "I worked with Dr. Arun Ross to develop an emotion-recognition algorithm using PyTorch, conducted data analysis on model outcomes to evaluate its precision in relation to established models, and performed data analysis on results of the model to test its accuracy compared to existing models.",
       logo: companyLogoY,
     },
   ];
@@ -216,10 +218,29 @@ function App() {
     {
       title: "Long Texts & Websites Summarizer",
       description:
-        "summarizes web-pages (like wikipedia sites) & long texts to save users' time and provide them with concise information.",
+        "Summarizes web-pages (like wikipedia sites) & long texts to save users' time and provide them with concise information.",
       techUsed: ["Flask", "BeautifulSoup", "Natural Language Toolkit (NLTK)"],
       link: "https://github.com/snehasund/summarizer",
       image: summarizer,
+    },
+  ];
+
+  const pastProjects = [
+    {
+      name: "Library Management System",
+      link: "https://github.com/snehasund/library-management-system",
+    },
+    {
+      name: "Heart Disease Risk Factors Analysis",
+      link: "https://github.com/snehasund/heart-disease-analysis",
+    },
+    {
+      name: "Evaluating the Effectiveness of a Symbolic Metamodel",
+      link: "https://terra-docs.s3.us-east-2.amazonaws.com/IJHSR/Articles/volume5-issue2/IJHSR_2023_52_p116.pdf",
+    },
+    {
+      name: "Playlist Generator (built with the spotify API)",
+      link: "https://github.com/snehasund/spotify-api-fun",
     },
   ];
 
@@ -372,10 +393,15 @@ function App() {
               Solutions Engineering Team.
             </p>
             <p>
-              I'm constantly working on new projects and playing around with new tech so be sure to check back soon for some new updates.
+              I'm constantly working on new projects and playing around with new
+              tech so be sure to check back soon for some new updates.
             </p>
-            <button class="button-class"><a class="resume-button" href={resume} download>Download My Resume</a></button>
-            </div>
+            <button class="button-class">
+              <a class="resume-button" href={resume} download>
+                Download My Resume
+              </a>
+            </button>
+          </div>
         </div>
       </header>
 
@@ -407,7 +433,7 @@ function App() {
               alt={`${experience.company} Logo`}
               className="logo"
             />
-            <div>
+            <div class="experience-text">
               <h3>{experience.title}</h3>
               <p className="company">
                 {experience.company} -{" "}
@@ -448,6 +474,27 @@ function App() {
               />
             </div>
           ))}
+
+          {/* New card for past projects */}
+          <div className="project-card">
+            <div className="card-content">
+              <h3>Past Projects</h3>
+              <ul>
+                {pastProjects.map((project, index) => (
+                  <li key={index}>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "darkgreen" }}
+                    >
+                      {project.name}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -471,13 +518,21 @@ function App() {
       <footer className="App-footer">
         <p>Connect with me!</p>
         <div className="social-icons">
-          <a href="https://www.linkedin.com/in/sneha-sundar26" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/sneha-sundar26"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-linkedin black-icon larger-icon"></i>
           </a>
           <a href="mailto:snehas9@illinois.edu">
             <i className="far fa-envelope black-icon larger-icon"></i>
           </a>
-          <a href="https://github.com/snehasund" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/snehasund"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <i className="fab fa-github black-icon larger-icon"></i>
           </a>
         </div>

@@ -13,6 +13,10 @@
   }
 }
 
+h5 {
+  font-size: 40px;
+}
+
 .App-header {
   background-color: #72907e;
   min-height: 100vh;
@@ -161,6 +165,10 @@ h2 {
   color: #777;
 }
 
+.experience-text {
+  border: 3px solid #72907e;
+  padding: 20px;
+}
 /* coursework section */
 
 .section ul {
