@@ -125,6 +125,7 @@ h2 {
 }
 
 /* Relevant Coursework Section */
+
 .section ul {
   list-style-type: none;
   padding: 0;
@@ -141,6 +142,27 @@ h2 {
 .section ul li:hover {
   background-color: #e9ecef; /* Background color on hover */
 }
+
+.coursework-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 20px;
+  justify-content: center;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow the card */
+}
+
 
 /* Current Projects Section */
 

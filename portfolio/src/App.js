@@ -40,8 +40,8 @@ import companyLogoY from "./logos/iprobe-logo.png"; // Replace with actual image
 //prof pic
 import profilePicture from "./images/profile-picture.png"; // Import your profile picture
 
-import restaurantReccomender from "./images/restaurant-recommender.png"
-import worldHappinessVisualization from "./images/world-happiness-visualization.png"
+import restaurantReccomender from "./images/restaurant-recommender.png";
+import worldHappinessVisualization from "./images/world-happiness-visualization.png";
 
 function App() {
   // Define your data
@@ -158,10 +158,15 @@ function App() {
 
   const coursework = [
     "Data Structures",
-    "Algorithms",
-    "Machine Learning",
+    "Artificial Intelligence",
     "Database Systems",
-    "Statistics",
+    "Statistics & Probability",
+    "Statistical Modeling",
+    "Discrete Structures",
+    "Data Science Discovery",
+    "Computer Systems",
+    "Software Design Lab",
+    "Programming Methodologies in C++",
   ];
 
   const projects = [
@@ -375,9 +380,9 @@ function App() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: 'darkgreen' }}
+                    style={{ color: "darkgreen" }}
                   >
-                  {project.title}
+                    {project.title}
                   </a>
                 </h3>
                 <p>{project.description}</p>
@@ -398,11 +403,13 @@ function App() {
       {/* Relevant Coursework Section */}
       <section className="section">
         <h2>Relevant Coursework</h2>
-        <ul>
+        <div className="coursework-container">
           {coursework.map((course, index) => (
-            <li key={index}>{course}</li>
+            <div className="course-card" key={index}>
+              <p>{course}</p>
+            </div>
           ))}
-        </ul>
+        </div>
       </section>
 
       {/* Footer */}
