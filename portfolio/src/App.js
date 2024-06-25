@@ -170,15 +170,15 @@ function App() {
       description:
         "Created a full-stack web application to help users simplify the decision of where to eat. This application was built with KMeans clustering to find the most highly regarded restaurants based on the user's cuisine preferences using the Geolocate API and Google Places API.",
       techUsed: ["React.js", "Flask", "TypeScript", "MongoDB", "Google OAuth"],
-      link: "https://www.yourportfolio.com",
+      link: "https://github.com/snehasund/restaurant-recommender",
       image: restaurantReccomender,
     },
     {
-      title: "Data Visualization Project",
+      title: "World Happiness Visualization",
       description:
         "Utilizing R, conducted data cleaning and preparation for the World Happiness Report dataset. Visualized happiness scores and their distribution across regions using bar charts and density curves created with ggplot2, effectively communicating key insights through visualizations.",
       techUsed: ["RStudio"],
-      link: "https://www.datavisualizationproject.com",
+      link: "https://github.com/snehasund/world-happiness-visualization",
       image: worldHappinessVisualization,
     },
   ];
