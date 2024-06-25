@@ -31,6 +31,7 @@ import {
   FaDocker,
 } from "react-icons/fa";
 
+
 import "./App.css"; // Import your CSS file for styling
 
 // experiences company logos
@@ -321,12 +322,15 @@ function App() {
       {/* Tech Stack Section */}
       <section className="section">
         <div>
-          <h1>Tech Stack</h1>
+          <h2>Tech Stack</h2>
           <div className="tech-stack">
             {techStack.map((tech, index) => (
               <div key={index} className="tech-item">
                 <a href={tech.url} target="_blank" rel="noopener noreferrer">
-                  {React.cloneElement(tech.icon, { size: 32, color: 'darkgreen'})} 
+                  {React.cloneElement(tech.icon, {
+                    size: 32,
+                    color: "darkgreen",
+                  })}
                 </a>
               </div>
             ))}
@@ -334,7 +338,6 @@ function App() {
         </div>
       </section>
 
-      {/* Experiences Section */}
       <section className="section">
         <h2>Experiences</h2>
         {experiences.map((experience, index) => (

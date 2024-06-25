@@ -68,6 +68,10 @@
 
 /* experiences cards */
 
+h2 {
+  font-family: cursive;
+}
+
 .card {
   display: flex;
   align-items: center; /* Align items vertically */
