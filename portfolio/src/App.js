@@ -31,7 +31,6 @@ import {
   FaDocker,
 } from "react-icons/fa";
 
-
 import "./App.css"; // Import your CSS file for styling
 
 // experiences company logos
@@ -40,6 +39,9 @@ import companyLogoY from "./logos/iprobe-logo.png"; // Replace with actual image
 
 //prof pic
 import profilePicture from "./images/profile-picture.png"; // Import your profile picture
+
+import restaurantReccomender from "./images/restaurant-recommender.png"
+import worldHappinessVisualization from "./images/world-happiness-visualization.png"
 
 function App() {
   // Define your data
@@ -164,18 +166,20 @@ function App() {
 
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "Restaurant Recommender",
       description:
-        "Created a responsive portfolio website using HTML, CSS, JavaScript, and React.",
-      techUsed: ["HTML", "CSS", "JavaScript", "React"],
+        "Created a full-stack web application to help users simplify the decision of where to eat. This application was built with KMeans clustering to find the most highly regarded restaurants based on the user's cuisine preferences using the Geolocate API and Google Places API.",
+      techUsed: ["React.js", "Flask", "TypeScript", "MongoDB", "Google OAuth"],
       link: "https://www.yourportfolio.com",
+      image: restaurantReccomender,
     },
     {
       title: "Data Visualization Project",
       description:
-        "Developed interactive visualizations of statistical data using Python and JavaScript libraries.",
-      techUsed: ["Python", "JavaScript", "D3.js", "Matplotlib"],
+        "Utilizing R, conducted data cleaning and preparation for the World Happiness Report dataset. Visualized happiness scores and their distribution across regions using bar charts and density curves created with ggplot2, effectively communicating key insights through visualizations.",
+      techUsed: ["RStudio"],
       link: "https://www.datavisualizationproject.com",
+      image: worldHappinessVisualization,
     },
   ];
 
@@ -359,6 +363,37 @@ function App() {
         ))}
       </section>
 
+      {/* Current Projects Section */}
+      <section className="section">
+        <h2>Current Projects</h2>
+        <div className="project-card-container">
+          {projects.map((project, index) => (
+            <div className="project-card" key={index}>
+              <div className="card-content">
+                <h3>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
+                <p>{project.description}</p>
+                <p>
+                  <strong>Tech used:</strong> {project.techUsed.join(", ")}
+                </p>
+              </div>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Relevant Coursework Section */}
       <section className="section">
         <h2>Relevant Coursework</h2>
@@ -367,24 +402,6 @@ function App() {
             <li key={index}>{course}</li>
           ))}
         </ul>
-      </section>
-
-      {/* Current Projects Section */}
-      <section className="section">
-        <h2>Current Projects</h2>
-        {projects.map((project, index) => (
-          <div key={index}>
-            <h3>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                {project.title}
-              </a>
-            </h3>
-            <p>{project.description}</p>
-            <p>
-              <strong>Tech used:</strong> {project.techUsed.join(", ")}
-            </p>
-          </div>
-        ))}
       </section>
 
       {/* Footer */}

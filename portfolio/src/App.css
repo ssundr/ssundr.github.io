@@ -141,3 +141,35 @@ h2 {
 .section ul li:hover {
   background-color: #e9ecef; /* Background color on hover */
 }
+
+/* Current Projects Section */
+
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow the card */
+}
+
+.card-content {
+  /* Define styles for the content area if needed */
+}
+
+.project-image {
+  width: 100%; /* Ensure the image takes full width */
+  height: auto; /* Let the height adjust to maintain aspect ratio */
+}
+
+.project-card:hover {
+  z-index: 1; /* Ensure the hovered card is on top */
+}
