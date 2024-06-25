@@ -29,6 +29,7 @@ import {
   FaCuttlefish,
   FaDiceD20,
   FaDocker,
+  FaNpm,
 } from "react-icons/fa";
 
 import "./App.css"; // Import your CSS file for styling
@@ -59,6 +60,11 @@ function App() {
       name: "JavaScript",
       icon: <FaJsSquare />,
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      name: "npm",
+      icon: <FaNpm />, 
+      url: "https://www.npmjs.com",
     },
     {
       name: "HTML",
@@ -162,9 +168,9 @@ function App() {
       logo: companyLogoZ,
     },
     {
-      title: "Research Intern",
-      company: "iPRoBe Lab, Michigan State University",
-      date: "Spring 2022",
+      title: "Research Intern @ iPRoBe Lab",
+      company: "Michigan State University",
+      date: "Summer 2022",
       description: "I worked with Dr. Arun Ross to develop an emotion-recognition algorithm using PyTorch, conducted data analysis on model outcomes to evaluate its precision in relation to established models, and performed data analysis on results of the model to test its accuracy compared to existing models.",
       logo: companyLogoY,
     },
@@ -383,7 +389,7 @@ function App() {
                 <a href={tech.url} target="_blank" rel="noopener noreferrer">
                   {React.cloneElement(tech.icon, {
                     size: 32,
-                    color: "darkgreen",
+                    color: "#023020",
                   })}
                 </a>
               </div>
