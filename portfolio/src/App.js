@@ -34,8 +34,9 @@ import {
 import "./App.css"; // Import your CSS file for styling
 
 // experiences company logos
-import companyLogoX from "./logos/arrcus-logo.jpeg"; // Replace with actual image paths
-import companyLogoY from "./logos/iprobe-logo.png"; // Replace with actual image paths
+import companyLogoX from "./logos/arrcus-logo.jpeg"; // arrcus
+import companyLogoY from "./logos/iprobe-logo.png"; // msu
+import companyLogoZ from "./logos/data-science.jpeg"; // cs/stat 107 !!
 
 //prof pic
 import profilePicture from "./images/profile-picture.png"; // Import your profile picture
@@ -140,20 +141,28 @@ function App() {
   const experiences = [
     {
       title: "Software Engineering Intern",
-      company: "Tech Company X",
-      date: "Summer 2023",
+      company: "Arrcus, Inc",
+      date: "Summer 2024",
       description:
-        "Worked on front-end development and collaborated with a team to build a web application.",
+        "lala",
       logo: companyLogoX,
     },
     {
-      title: "Data Analysis Intern",
-      company: "Data Analytics Firm Y",
-      date: "Spring 2023",
+      title: "Research Intern",
+      company: "iPRoBe Lab, Michigan State University",
+      date: "Spring 2022",
       description:
-        "Utilized statistical methods and programming languages to analyze data and generate insights.",
+        "this is my musical monologue",
       logo: companyLogoY,
     },
+    {
+      title: "Data Science Discovery Course Assistant",
+      company: "University of Illinois Urbana-Champaign",
+      date: "Jan 2024 - Present",
+      description:
+        "i slay here trust",
+      logo: companyLogoZ,
+    }
   ];
 
   const coursework = [
@@ -186,6 +195,9 @@ function App() {
       link: "https://github.com/snehasund/world-happiness-visualization",
       image: worldHappinessVisualization,
     },
+    {
+      title: 
+    }
   ];
 
   return (
@@ -346,7 +358,7 @@ function App() {
           </div>
         </div>
       </section>
-
+      {/* Experiences Section */}
       <section className="section">
         <h2>Experiences</h2>
         {experiences.map((experience, index) => (
