@@ -53,7 +53,6 @@ import resume from "./files/sneha_resume.pdf"
 // add download button for research paper here
 
 function App() {
-  // Define your data
 
   const techStack = [
     {
@@ -388,7 +387,7 @@ function App() {
           </div>
         </div>
       </section>
-      {/* Experiences Section */}
+      {/* experiences section */}
       <section className="section">
         <h2>Experiences</h2>
         {experiences.map((experience, index) => (
@@ -410,7 +409,7 @@ function App() {
         ))}
       </section>
 
-      {/* Current Projects Section */}
+      {/* projects section */}
       <section className="section">
         <h2>Current Projects</h2>
         <div className="project-card-container">
@@ -442,7 +441,7 @@ function App() {
         </div>
       </section>
 
-      {/* Relevant Coursework Section */}
+      {/* coursework section */}
       <section className="section">
         <h2>Relevant Coursework</h2>
         <div className="coursework-container">
@@ -458,7 +457,7 @@ function App() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* footer */}
       <footer className="App-footer">
         <p>Connect with me!</p>
         <div className="social-icons">
