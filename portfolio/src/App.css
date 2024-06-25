@@ -171,6 +171,7 @@ h2 {
 
 .course-card:hover p {
   display: none;
+  margin: auto;
 }
 
 .course-card:hover::before {

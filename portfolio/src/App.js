@@ -168,7 +168,7 @@ function App() {
     { name: "Software Design Lab", number: "CS 222" },
     { name: "Programming Methodologies in C++", number: "CS 128" },
   ];
-  
+
   const projects = [
     {
       title: "Restaurant Recommender",
