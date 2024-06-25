@@ -151,22 +151,22 @@ function App() {
       title: "Software Engineering Intern",
       company: "Arrcus, Inc",
       date: "Summer 2024",
-      description: "lala",
+      description: "I utilized Python libraries such as pexpect and paramiko to automate SSH connections to devices, parse error messages, and implemented multithreading for efficient parsing of JSON files to collect device information for numerous devices.",
       logo: companyLogoX,
-    },
-    {
-      title: "Research Intern",
-      company: "iPRoBe Lab, Michigan State University",
-      date: "Spring 2022",
-      description: "this is my musical monologue",
-      logo: companyLogoY,
     },
     {
       title: "Data Science Discovery Course Assistant",
       company: "University of Illinois Urbana-Champaign",
       date: "Jan 2024 - Present",
-      description: "i slay here trust",
+      description: "I fostered an interactive learning environment during lab sessions by encouraging student participation and providing hands-on guidance to enhance comprehension of course material, and offered support during regular office hours, where I addressed individual questions, clarified concepts, and provided additional resources to aid students in their academic progress.",
       logo: companyLogoZ,
+    },
+    {
+      title: "Research Intern",
+      company: "iPRoBe Lab, Michigan State University",
+      date: "Spring 2022",
+      description: "I worked with Dr. Arun Ross to develop an emotion-recognition algorithm using PyTorch, conducted data analysis on model outcomes to evaluate its precision in relation to established models, and performed data analysis on results of the model to test its accuracy compared to existing models.",
+      logo: companyLogoY,
     },
   ];
 
