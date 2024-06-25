@@ -375,8 +375,9 @@ function App() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
+                    style={{ color: 'darkgreen' }}
                   >
-                    {project.title}
+                  {project.title}
                   </a>
                 </h3>
                 <p>{project.description}</p>
