@@ -1,6 +1,19 @@
 import React from "react";
 import Typical from "react-typical";
-import { SiDjango, SiTensorflow, SiPycharm, SiFlask, SiPandas, SiKeras, SiTypescript, SiNumpy, SiOpencv} from 'react-icons/si';
+import {
+  SiDjango,
+  SiTensorflow,
+  SiPycharm,
+  SiFlask,
+  SiPandas,
+  SiKeras,
+  SiTypescript,
+  SiNumpy,
+  SiOpencv,
+  SiMongodb,
+} from "react-icons/si";
+import { CgCPlusPlus } from "react-icons/cg";
+
 import {
   FaJsSquare,
   FaHtml5,
@@ -30,29 +43,95 @@ import profilePicture from "./images/profile-picture.png"; // Import your profil
 function App() {
   // Define your data
   const techStack = [
-    { name: "JavaScript", icon: <FaJsSquare /> },
-    { name: "HTML", icon: <FaHtml5 /> },
-    { name: "CSS", icon: <FaCss3Alt /> },
-    { name: "Python", icon: <FaPython /> },
-    { name: "Java", icon: <FaJava /> },
-    { name: "R", icon: <FaRProject /> },
-    { name: "Django", icon: <SiDjango /> }, // Django with custom icon
-    { name: "PyTorch", icon: <FaFire /> }, // PyTorch added
-    { name: "NumPy", icon: <SiNumpy />}, 
-    { name: "JSON", icon: <FaFileCode /> }, // JSON added
-    { name: "TypeScript", icon: <SiTypescript /> }, // TypeScript added
-    { name: "C/C++", icon: <FaCuttlefish /> }, // C added
-    { name: "React", icon: <FaReact /> }, // React added
-    { name: "Flask", icon: <SiFlask />},
-    { name: "VSCode", icon: <FaCode /> }, // VSCode added
-    { name: "Docker", icon: <FaDocker />}, 
-    { name: "Git", icon: <FaGitAlt /> }, // Git added
-    { name: "TensorFlow", icon: <SiTensorflow /> }, // TensorFlow added
-    { name: "Opencv", icon: <SiOpencv />},
-    { name: "Keras", icon: <SiKeras /> }, // Keras added
-    { name: "Pandas", icon: <SiPandas /> }, // Pandas added
-    { name: "GANs", icon: <FaDiceD20 /> }, // GANs added
-    { name: "PyCharm", icon: <SiPycharm />}
+    {
+      name: "JavaScript",
+      icon: <FaJsSquare />,
+      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    },
+    {
+      name: "HTML",
+      icon: <FaHtml5 />,
+      url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3Alt />,
+      url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    },
+    { name: "Python", icon: <FaPython />, url: "https://www.python.org/doc/" },
+    { name: "Java", icon: <FaJava />, url: "https://docs.oracle.com/en/java/" },
+    { name: "R", icon: <FaRProject />, url: "https://www.rdocumentation.org/" },
+    {
+      name: "Django",
+      icon: <SiDjango />,
+      url: "https://docs.djangoproject.com/en/stable/",
+    }, // Django with custom icon
+    {
+      name: "PyTorch",
+      icon: <FaFire />,
+      url: "https://pytorch.org/docs/stable/index.html",
+    }, // PyTorch added
+    { name: "NumPy", icon: <SiNumpy />, url: "https://numpy.org/doc/" },
+    { name: "JSON", icon: <FaFileCode />, url: "https://www.json.org/" }, // JSON added
+    {
+      name: "TypeScript",
+      icon: <SiTypescript />,
+      url: "https://www.typescriptlang.org/docs/",
+    }, // TypeScript added
+    {
+      name: "C",
+      icon: <FaCuttlefish />,
+      url: "https://en.cppreference.com/w/c/language",
+    }, // C added
+    {
+      name: "C++",
+      icon: <CgCPlusPlus />,
+      url: "https://en.cppreference.com/w/cpp",
+    }, // C++ added
+    {
+      name: "React",
+      icon: <FaReact />,
+      url: "https://reactjs.org/docs/getting-started.html",
+    }, // React added
+    {
+      name: "Flask",
+      icon: <SiFlask />,
+      url: "https://flask.palletsprojects.com/en/2.0.x/",
+    },
+    {
+      name: "VSCode",
+      icon: <FaCode />,
+      url: "https://code.visualstudio.com/docs",
+    }, // VSCode added
+    { name: "Docker", icon: <FaDocker />, url: "https://docs.docker.com/" },
+    { name: "MongoDB", icon: <SiMongodb />, url: "https://docs.mongodb.com/" },
+    { name: "Git", icon: <FaGitAlt />, url: "https://git-scm.com/doc" }, // Git added
+    {
+      name: "TensorFlow",
+      icon: <SiTensorflow />,
+      url: "https://www.tensorflow.org/guide",
+    }, // TensorFlow added
+    {
+      name: "Opencv",
+      icon: <SiOpencv />,
+      url: "https://docs.opencv.org/master/",
+    },
+    { name: "Keras", icon: <SiKeras />, url: "https://keras.io/" }, // Keras added
+    {
+      name: "Pandas",
+      icon: <SiPandas />,
+      url: "https://pandas.pydata.org/docs/",
+    }, // Pandas added
+    {
+      name: "GANs",
+      icon: <FaDiceD20 />,
+      url: "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+    }, // GANs added
+    {
+      name: "PyCharm",
+      icon: <SiPycharm />,
+      url: "https://www.jetbrains.com/pycharm/documentation/",
+    },
   ];
 
   const experiences = [
@@ -246,7 +325,9 @@ function App() {
           <div className="tech-stack">
             {techStack.map((tech, index) => (
               <div key={index} className="tech-item">
-                {tech.icon}
+                <a href={tech.url} target="_blank" rel="noopener noreferrer">
+                  {tech.icon}
+                </a>
                 <p>{tech.name}</p>
               </div>
             ))}
