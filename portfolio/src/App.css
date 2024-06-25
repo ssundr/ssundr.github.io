@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #72907e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,11 +48,11 @@
 }
 
 h1 {
-  color: white;
+  color: rgb(2, 29, 2);
 }
 
 .about-me-card-content p {
-  color: black;
+  color: rgb(2, 29, 2);
   font-size: 20px;
 }
 
@@ -227,10 +227,6 @@ h2 {
   transition: transform 0.3s ease;
   position: relative;
   overflow: hidden; /* Ensure the image doesn't overflow the card */
-}
-
-.card-content {
-  /* Define styles for the content area if needed */
 }
 
 .project-image {
