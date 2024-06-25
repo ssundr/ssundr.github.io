@@ -51,19 +51,19 @@
   flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
   list-style-type: none; /* Removes default list styling */
   padding: 0;
+  margin: 30px;
+  background-color: #ebebeb;
+  border-radius: 10px;
+
 }
 
 .tech-item {
-  margin: 10px; /* Adjust margin between items */
-  text-align: center;
-}
-
-.tech-item i {
-  font-size: 2rem; /* Adjust size as needed */
-}
-
-.tech-item p {
-  margin-top: 5px;
+  flex-basis: calc(100% / 20); /* Adjust the number to control the number of items per row */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  size: 20px;
 }
 
 /* experiences cards */

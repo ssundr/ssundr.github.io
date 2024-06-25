@@ -326,9 +326,8 @@ function App() {
             {techStack.map((tech, index) => (
               <div key={index} className="tech-item">
                 <a href={tech.url} target="_blank" rel="noopener noreferrer">
-                  {tech.icon}
+                  {React.cloneElement(tech.icon, { size: 32, color: 'darkgreen'})} 
                 </a>
-                <p>{tech.name}</p>
               </div>
             ))}
           </div>
