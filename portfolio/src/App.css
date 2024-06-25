@@ -38,7 +38,7 @@
 
 /* about-me section */
 .about-me-card {
-  background-color: #ffffff;
+  background-color: #a1b197;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 10px;
@@ -51,7 +51,7 @@ h1 {
   color: rgb(2, 29, 2);
 }
 
-.about-me-card-content p {
+.card-content p {
   color: rgb(2, 29, 2);
   font-size: 20px;
 }
@@ -61,6 +61,8 @@ h1 {
   margin-top: 30px;
   width: 20%;
   height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(8, 53, 8, 0.5), 0 0 20px rgba(0, 69, 0, 0.3);
 }
 
 /* resume button */

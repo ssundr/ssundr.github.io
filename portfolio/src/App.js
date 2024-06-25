@@ -39,7 +39,7 @@ import companyLogoY from "./logos/iprobe-logo.png"; // msu
 import companyLogoZ from "./logos/data-science.jpeg"; // cs/stat 107 !!
 
 // prof pic
-import profilePicture from "./images/profile-picture.png"; // Import your profile picture
+import profilePicture from "./images/profile-picture.jpeg"; // Import your profile picture
 
 // project images
 import restaurantReccomender from "./images/restaurant-recommender.png";
