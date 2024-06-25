@@ -54,6 +54,7 @@ h1 {
 .card-content p {
   color: rgb(2, 29, 2);
   font-size: 20px;
+  margin: 15px;
 }
 
 /* profile picture */

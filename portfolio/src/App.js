@@ -364,6 +364,9 @@ function App() {
               I am currently working as a SWE intern at Arrcus on their Customer
               Solutions Engineering Team.
             </p>
+            <p>
+              I'm constantly working on new projects and playing around with new tech so be sure to check back soon for some new updates.
+            </p>
             <button class="button-class"><a class="resume-button" href={resume} download>Download My Resume</a></button>
             </div>
         </div>
