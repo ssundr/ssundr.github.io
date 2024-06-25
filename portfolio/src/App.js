@@ -1,5 +1,11 @@
 import React from 'react';
+import Typical from 'react-typical';
+
 import './App.css'; // Import your CSS file for styling
+
+// experiences company logos
+import companyLogoX from './logos/arrcus-logo.jpeg'; // Replace with actual image paths
+import companyLogoY from './logos/iprobe-logo.png'; // Replace with actual image paths
 
 function App() {
   // Define your data
@@ -18,12 +24,14 @@ function App() {
       company: 'Tech Company X',
       date: 'Summer 2023',
       description: 'Worked on front-end development and collaborated with a team to build a web application.',
+      logo: companyLogoX,
     },
     {
       title: 'Data Analysis Intern',
       company: 'Data Analytics Firm Y',
       date: 'Spring 2023',
       description: 'Utilized statistical methods and programming languages to analyze data and generate insights.',
+      logo: companyLogoY,
     },
   ];
   
@@ -47,7 +55,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to My Portfolio</h1>
+      <h1>
+      <Typical
+        steps={['welcome to my portfolio website :)', 1000]}
+        loop={Infinity}
+        wrapper="span"
+      />
+    </h1>
         <p>Computer Science & Statistics Major at the University of Illinois</p>
         <p>Loves nature and the color green</p>
       </header>
@@ -69,10 +83,13 @@ function App() {
       <section className="section">
         <h2>Experiences</h2>
         {experiences.map((experience, index) => (
-          <div key={index}>
-            <h3>{experience.title}</h3>
-            <p>{experience.company} - {experience.date}</p>
-            <p>{experience.description}</p>
+          <div key={index} className="card">
+            <img src={experience.logo} alt={`${experience.company} Logo`} className="logo" />
+            <div>
+              <h3>{experience.title}</h3>
+              <p className="company">{experience.company} - <span className="date">{experience.date}</span></p>
+              <p>{experience.description}</p>
+            </div>
           </div>
         ))}
       </section>

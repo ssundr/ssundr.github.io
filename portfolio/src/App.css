@@ -37,7 +37,7 @@
   }
 }
 
-/* App.css */
+/* tech stack */
 
 .tech-stack {
   display: flex;
@@ -58,4 +58,76 @@
 
 .tech-item p {
   margin-top: 5px;
+}
+
+/* experiences cards */
+
+.card {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move the card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Larger box shadow on hover */
+}
+
+.card .logo {
+  width: 20%; /* Adjust logo width as needed */
+  height: 100%; /* Adjust logo height as needed */
+  margin-right: 20px; /* Space between logo and card content */
+  border-radius: 50%; /* Round the corners for a circular look */
+  object-fit: cover; /* Ensure the image covers the container */
+  padding-right: 10%;
+}
+
+.card-content {
+  flex: 1; /* Allows the card content to expand to fill remaining space */
+}
+
+/* Example styles for card content */
+.card h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+.card .company {
+  font-weight: bold;
+}
+
+.card .date {
+  color: #777;
+}
+
+/* Relevant Coursework Section */
+.section ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.section ul li {
+  background-color: #f9f9f9; /* Light background color */
+  padding: 15px; /* Padding around each coursework item */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between each item */
+}
+
+.section ul li:hover {
+  background-color: #e9ecef; /* Background color on hover */
 }
