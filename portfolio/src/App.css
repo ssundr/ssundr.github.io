@@ -21,7 +21,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 .App-link {
@@ -37,12 +36,45 @@
   }
 }
 
+/* about-me section */
+.about-me-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0 30px;
+  margin-bottom: 30px;
+  max-width: 60%;
+}
+
+h1 {
+  color: white;
+}
+
+.about-me-card-content p {
+  color: black;
+  font-size: 20px;
+}
+
 /* profile picture */
 .profile-picture {
-  width: 30%;
+  margin-top: 30px;
+  width: 20%;
   height: auto;
 }
 
+/* resume button */
+.button-class{
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(1, 58, 1);
+}
+
+.button-class a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
 /* tech stack */
 
 .tech-stack {

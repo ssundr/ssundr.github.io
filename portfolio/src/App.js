@@ -45,10 +45,16 @@ import profilePicture from "./images/profile-picture.png"; // Import your profil
 import restaurantReccomender from "./images/restaurant-recommender.png";
 import worldHappinessVisualization from "./images/world-happiness-visualization.png";
 import summarizer from "./images/summarizer.png";
-import generatedFaces from "./images/generated-faces.png"
+import generatedFaces from "./images/generated-faces.png";
+
+// resume
+import resume from "./files/sneha_resume.pdf"
+
+// add download button for research paper here
 
 function App() {
   // Define your data
+
   const techStack = [
     {
       name: "JavaScript",
@@ -146,26 +152,23 @@ function App() {
       title: "Software Engineering Intern",
       company: "Arrcus, Inc",
       date: "Summer 2024",
-      description:
-        "lala",
+      description: "lala",
       logo: companyLogoX,
     },
     {
       title: "Research Intern",
       company: "iPRoBe Lab, Michigan State University",
       date: "Spring 2022",
-      description:
-        "this is my musical monologue",
+      description: "this is my musical monologue",
       logo: companyLogoY,
     },
     {
       title: "Data Science Discovery Course Assistant",
       company: "University of Illinois Urbana-Champaign",
       date: "Jan 2024 - Present",
-      description:
-        "i slay here trust",
+      description: "i slay here trust",
       logo: companyLogoZ,
-    }
+    },
   ];
 
   const coursework = [
@@ -187,7 +190,7 @@ function App() {
       description: "Built a GAN to generate faces based on the CelebA dataset.",
       techUsed: ["PyTorch", "torchvision", "Matplotlib"],
       link: "https://github.com/snehasund/generated-faces",
-      image: generatedFaces, 
+      image: generatedFaces,
     },
     {
       title: "Restaurant Recommender",
@@ -207,7 +210,8 @@ function App() {
     },
     {
       title: "Long Texts & Websites Summarizer",
-      description: "summarizes web-pages (like wikipedia sites) & long texts to save users' time and provide them with concise information.",
+      description:
+        "summarizes web-pages (like wikipedia sites) & long texts to save users' time and provide them with concise information.",
       techUsed: ["Flask", "BeautifulSoup", "Natural Language Toolkit (NLTK)"],
       link: "https://github.com/snehasund/summarizer",
       image: summarizer,
@@ -350,8 +354,20 @@ function App() {
             wrapper="span"
           />
         </h1>
-        <p>Computer Science & Statistics Major at the University of Illinois</p>
-        <p>I love nature and the color green</p>
+        <div class="about-me-card">
+          <div class="card-content">
+            <p>
+              I'm a student at the University of Illinois Urbana-Champaign
+              currently pursuing a Bachelor of Science in Statistics & Computer
+              Science.
+            </p>
+            <p>
+              I am currently working as a SWE intern at Arrcus on their Customer
+              Solutions Engineering Team.
+            </p>
+            <button class="button-class"><a class="resume-button" href={resume} download>Download My Resume</a></button>
+            </div>
+        </div>
       </header>
 
       {/* Tech Stack Section */}
