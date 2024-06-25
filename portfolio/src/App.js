@@ -38,11 +38,14 @@ import companyLogoX from "./logos/arrcus-logo.jpeg"; // arrcus
 import companyLogoY from "./logos/iprobe-logo.png"; // msu
 import companyLogoZ from "./logos/data-science.jpeg"; // cs/stat 107 !!
 
-//prof pic
+// prof pic
 import profilePicture from "./images/profile-picture.png"; // Import your profile picture
 
+// project images
 import restaurantReccomender from "./images/restaurant-recommender.png";
 import worldHappinessVisualization from "./images/world-happiness-visualization.png";
+import summarizer from "./images/summarizer.png";
+import generatedFaces from "./images/generated-faces.png"
 
 function App() {
   // Define your data
@@ -180,6 +183,13 @@ function App() {
 
   const projects = [
     {
+      title: "Face Generator",
+      description: "Built a GAN to generate faces based on the CelebA dataset.",
+      techUsed: ["PyTorch", "torchvision", "Matplotlib"],
+      link: "https://github.com/snehasund/generated-faces",
+      image: generatedFaces, 
+    },
+    {
       title: "Restaurant Recommender",
       description:
         "Created a full-stack web application to help users simplify the decision of where to eat. This application was built with KMeans clustering to find the most highly regarded restaurants based on the user's cuisine preferences using the Geolocate API and Google Places API.",
@@ -196,8 +206,12 @@ function App() {
       image: worldHappinessVisualization,
     },
     {
-      title: 
-    }
+      title: "Long Texts & Websites Summarizer",
+      description: "summarizes web-pages (like wikipedia sites) & long texts to save users' time and provide them with concise information.",
+      techUsed: ["Flask", "BeautifulSoup", "Natural Language Toolkit (NLTK)"],
+      link: "https://github.com/snehasund/summarizer",
+      image: summarizer,
+    },
   ];
 
   return (
