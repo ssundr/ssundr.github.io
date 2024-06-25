@@ -460,7 +460,18 @@ function App() {
 
       {/* Footer */}
       <footer className="App-footer">
-        <p>&copy; 2024 Your Name</p>
+        <p>Connect with me!</p>
+        <div className="social-icons">
+          <a href="https://www.linkedin.com/in/sneha-sundar26" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin black-icon larger-icon"></i>
+          </a>
+          <a href="mailto:snehas9@illinois.edu">
+            <i className="far fa-envelope black-icon larger-icon"></i>
+          </a>
+          <a href="https://github.com/snehasund" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github black-icon larger-icon"></i>
+          </a>
+        </div>
       </footer>
     </div>
   );
