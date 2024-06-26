@@ -182,7 +182,7 @@ function App() {
     { name: "Data Structures", number: "CS 225" },
     { name: "Artificial Intelligence", number: "CS 440" },
     { name: "Database Systems", number: "CS 411" },
-    { name: "Statistics & Probability 1", number: "STAT 400" },
+    { name: "Statistics & Probability", number: "STAT 400 & STAT 410" },
     { name: "Statistical Modeling", number: "STAT 425" },
     { name: "Discrete Structures", number: "CS 173" },
     { name: "Data Science Discovery", number: "CS 107" },
