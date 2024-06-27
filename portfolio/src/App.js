@@ -546,7 +546,7 @@ function App() {
           >
             <i className="fab fa-linkedin black-icon larger-icon"></i>
           </a>
-          <a href="mailto:snehas9@illinois.edu">
+          <a href="mailto:snehamsundar@gmail.com">
             <i className="far fa-envelope black-icon larger-icon"></i>
           </a>
           <a
