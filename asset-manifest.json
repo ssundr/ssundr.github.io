@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7a47786.css",
-    "main.js": "/static/js/main.014c44ca.js",
+    "main.css": "/static/css/main.ab0ff8d3.css",
+    "main.js": "/static/js/main.2e92c8e7.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.3dbaa2958bc58aa962f4.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
@@ -10,12 +10,12 @@
     "static/media/sneha_resume.pdf": "/static/media/sneha_resume.0b0ca746c5e5110d224d.pdf",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
     "index.html": "/index.html",
-    "main.d7a47786.css.map": "/static/css/main.d7a47786.css.map",
-    "main.014c44ca.js.map": "/static/js/main.014c44ca.js.map",
+    "main.ab0ff8d3.css.map": "/static/css/main.ab0ff8d3.css.map",
+    "main.2e92c8e7.js.map": "/static/js/main.2e92c8e7.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7a47786.css",
-    "static/js/main.014c44ca.js"
+    "static/css/main.ab0ff8d3.css",
+    "static/js/main.2e92c8e7.js"
   ]
 }
