@@ -248,24 +248,24 @@ function App() {
   return (
     <div className="App">
       <div className="navbar">
-          <a
-            href="https://www.linkedin.com/in/sneha-sundar26"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-linkedin white-icon larger-icon"></i>
-          </a>
-          <a href="mailto:snehas9@illinois.edu">
-            <i className="far fa-envelope white-icon larger-icon"></i>
-          </a>
-          <a
-            href="https://github.com/snehasund"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github white-icon larger-icon"></i>
-          </a>
-        </div>
+        <a
+          href="https://www.linkedin.com/in/sneha-sundar26"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-linkedin white-icon larger-icon"></i>
+        </a>
+        <a href="mailto:snehas9@illinois.edu">
+          <i className="far fa-envelope white-icon larger-icon"></i>
+        </a>
+        <a
+          href="https://github.com/snehasund"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-github white-icon larger-icon"></i>
+        </a>
+      </div>
       <header className="App-header">
         <img src={profilePicture} alt="Profile" className="profile-picture" />
         <h1>
@@ -403,19 +403,19 @@ function App() {
         <div class="about-me-card">
           <div class="card-content">
             <h3>Hi, I'm Sneha.</h3>
-            <p>
-              I'm a student at the University of Illinois Urbana-Champaign
-              currently pursuing a Bachelor of Science in Statistics & Computer
-              Science.
-            </p>
-            <p>
-              I am currently working as a SWE intern at Arrcus on their Customer
-              Solutions Engineering Team.
-            </p>
-            <p>
-              I'm constantly working on new projects and playing around with new
-              tech so be sure to check back soon for some new updates.
-            </p>
+              <li>
+                I'm a student at the University of Illinois Urbana-Champaign
+                currently pursuing a Bachelor of Science in Statistics &
+                Computer Science.
+              </li>
+              <li>
+                I am currently working as a SWE intern at Arrcus on their
+                Customer Solutions Engineering Team.
+              </li>
+              <li>
+                I'm constantly working on new projects and playing around with
+                new tech so be sure to check back soon for some new updates.
+              </li>
             <button class="button-class">
               <a class="resume-button" href={resume} download>
                 Download My Resume

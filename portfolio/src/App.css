@@ -51,24 +51,30 @@ h5 {
   padding: 10px;
   margin: 0 30px;
   margin-bottom: 30px;
-  max-width: 60%;
+  max-width: 70%;
 }
 
 h1 {
   color: rgb(2, 29, 2);
-  font-size: 40px;
+  font-size: 35px;
 }
 
-.card-content p {
+.card-content li {
   color: rgb(2, 29, 2);
   font-size: 20px;
   margin: 10px;
+  text-align: left;
 }
+
+.card-content h3 {
+  font-size: 25px;
+}
+
 
 /* profile picture */
 .profile-picture {
   margin-top: 30px;
-  width: 18%;
+  width: 14%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(8, 53, 8, 0.5), 0 0 20px rgba(0, 69, 0, 0.3);
@@ -77,7 +83,7 @@ h1 {
 /* resume button */
 .button-class{
   margin-top: 10px;
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   background-color: rgb(1, 58, 1);
 }
