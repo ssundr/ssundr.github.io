@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+
 import {
   SiDjango,
   SiTensorflow,
@@ -246,6 +247,25 @@ function App() {
 
   return (
     <div className="App">
+      <div className="navbar">
+          <a
+            href="https://www.linkedin.com/in/sneha-sundar26"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin white-icon larger-icon"></i>
+          </a>
+          <a href="mailto:snehas9@illinois.edu">
+            <i className="far fa-envelope white-icon larger-icon"></i>
+          </a>
+          <a
+            href="https://github.com/snehasund"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github white-icon larger-icon"></i>
+          </a>
+        </div>
       <header className="App-header">
         <img src={profilePicture} alt="Profile" className="profile-picture" />
         <h1>
@@ -423,6 +443,7 @@ function App() {
           </div>
         </div>
       </section>
+
       {/* experiences section */}
       <section className="section">
         <h2>Experiences</h2>
