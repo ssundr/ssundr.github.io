@@ -401,7 +401,30 @@ function App() {
           />
         </h1>
         <div class="about-me-card">
-          
+          <div class="card-content">
+            <h3>Hi, I'm Sneha.</h3>
+            <ul class="bullet-points">
+              <li>
+                I'm a student at the University of Illinois Urbana-Champaign
+                currently pursuing a Bachelor of Science in Statistics &
+                Computer Science.
+              </li>
+              <li>
+                I am currently working as a SWE intern at Arrcus on their
+                Customer Solutions Engineering Team.
+              </li>
+              <li>
+                I'm constantly working on new projects and playing around with
+                new tech so be sure to check back soon for some new updates.
+              </li>
+            </ul>
+            <button class="button-class">
+              <a class="resume-button" href={resume} download>
+                Download My Resume
+              </a>
+            </button>
+          </div>
+        </div>
       </header>
 
       {/* Tech Stack Section */}
