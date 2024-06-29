@@ -333,20 +333,21 @@ function App() {
 
       {/* Tech Stack Section */}
       <section className="section">
-        <div>
-          <h2>Tech Stack</h2>
-          <div className="tech-stack">
-            {techStack.map((tech, index) => (
-              <div key={index} className="tech-item">
-                <a href={tech.url} target="_blank" rel="noopener noreferrer">
+        <h2>Tech Stack</h2>
+        <div className="tech-stack">
+          {techStack.map((tech, index) => (
+            <div key={index} className="tech-item">
+              <a href={tech.url} target="_blank" rel="noopener noreferrer" style={{ color: 'green' }}>
+                <div style={{ textAlign: "center" }}>
                   {React.cloneElement(tech.icon, {
                     size: 32,
                     color: "#023020",
                   })}
-                </a>
-              </div>
-            ))}
-          </div>
+                </div>
+                <div style={{ textAlign: "center" }}>{tech.name}</div>
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
