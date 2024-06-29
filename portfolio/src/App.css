@@ -252,6 +252,11 @@ h2 {
   overflow: hidden; /* image doesn't overflow the card */
 }
 
+.project-card:hover {
+  transform: translateY(-5px); /* move card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
+}
+
 .project-image {
   width: 100%; /* image takes full width */
   height: auto; /* not distorted image */
