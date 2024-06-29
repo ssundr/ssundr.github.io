@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Typical from "react-typical";
 
 import {
@@ -55,6 +55,22 @@ import resume from "./files/sneha_resume.pdf";
 // add download button for research paper here
 
 function App() {
+  const [currentCard, setCurrentCard] = useState(0);
+    const cards = [
+        'Card 1 Content',
+        'Card 2 Content',
+        'Card 3 Content'
+        // Add more cards as needed
+    ];
+
+    const nextCard = () => {
+        setCurrentCard((currentCard + 1) % cards.length);
+    };
+
+    const prevCard = () => {
+        setCurrentCard((currentCard - 1 + cards.length) % cards.length);
+    };
+
   const techStack = [
     {
       name: "JavaScript",
@@ -225,6 +241,19 @@ function App() {
       image: summarizer,
     },
   ];
+
+  const handleSwipe = (event) => {
+    const xStart = event.touches[0].clientX;
+    const xEnd = event.touches[0].clientX;
+
+    if (xStart - xEnd > 50) {
+        // Swipe left
+        nextCard();
+    } else if (xEnd - xStart > 50) {
+        // Swipe right
+        prevCard();
+    }
+  };
 
   const pastProjects = [
     {
@@ -400,30 +429,14 @@ function App() {
             wrapper="span"
           />
         </h1>
-        <div class="about-me-card">
-          <div class="card-content">
-            <h3>Hi, I'm Sneha.</h3>
-            <ul class="bullet-points">
-              <li>
-                I'm a student at the University of Illinois Urbana-Champaign
-                currently pursuing a Bachelor of Science in Statistics &
-                Computer Science.
-              </li>
-              <li>
-                I am currently working as a SWE intern at Arrcus on their
-                Customer Solutions Engineering Team.
-              </li>
-              <li>
-                I'm constantly working on new projects and playing around with
-                new tech so be sure to check back soon for some new updates.
-              </li>
-            </ul>
-            <button class="button-class">
-              <a class="resume-button" href={resume} download>
-                Download My Resume
-              </a>
-            </button>
-          </div>
+        <div className="about-me-container" onTouchStart={handleSwipe} onTouchEnd={handleSwipe}>
+            {cards.map((card, index) => (
+                <div key={index} className={`flashcard ${index === currentCard ? 'active' : ''}`}>
+                    {card}
+                </div>
+            ))}
+            <button className="prev-btn" onClick={prevCard}>Previous</button>
+            <button className="next-btn" onClick={nextCard}>Next</button>
         </div>
       </header>
 
