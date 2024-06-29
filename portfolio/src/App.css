@@ -147,7 +147,11 @@ h1 {
   margin: 30px;
   background-color: #a1b197;
   border-radius: 10px;
+}
 
+.tech-stack:hover {
+  transform: translateY(-5px); /* move card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
 }
 
 .tech-item {
@@ -264,6 +268,11 @@ h2 {
   content: attr(data-number);
   display: none;
   font-weight: bold;
+}
+
+.course-card:hover {
+  transform: translateY(-5px); /* move card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
 }
 
 .course-card:hover p {
