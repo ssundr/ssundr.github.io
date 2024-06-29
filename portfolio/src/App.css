@@ -44,31 +44,62 @@ h5 {
 }
 
 /* about-me section */
-.about-me-container {
+.flashcard-container {
   position: relative;
-  width: 60%;
-  height: 250px; /* Adjust height as needed */
+  width: 90%; /* Set width to 80% of the screen */
+  max-width: 800px; /* Optionally set a max-width for responsiveness */
+  margin: 0 auto; /* Center horizontally */
+  height: 280px; /* Adjust height as needed */
   overflow: hidden;
 }
 
 .flashcard {
   position: absolute;
-  width: 100%;
+  width: 100%; /* Full width of flashcard container */
   height: 100%;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: #a1b197;
+  border: 1px solid #010c02;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: flex;
+  flex-direction: column; /* Ensure button stays below content */
   justify-content: center;
   align-items: center;
   font-size: 24px;
   user-select: none; /* Disable text selection */
   opacity: 0;
   transition: opacity 0.3s ease;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.flashcard-container:hover {
+  transform: translateY(-5px); /* move card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
 }
 
 .flashcard.active {
   opacity: 1;
+}
+
+.flashcard-content {
+  max-width: 60%; /* Limit content width */
+  text-align: center; /* Center content */
+  margin-top: -30px;
+  margin-bottom: 2%;
+}
+
+.download-btn {
+  display: block;
+  padding: 15px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #013a01;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-decoration: none; /* Remove default underline */
+  width: fit-content; /* Adjust button width as needed */
+  margin: 0 auto; /* Center the button horizontally */
 }
 
 .prev-btn,
@@ -79,43 +110,31 @@ h5 {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #013a01;
   color: #fff;
   border: none;
   outline: none;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .prev-btn {
-  left: 5%;
+  left: 5%;;
 }
 
 .next-btn {
   right: 5%;
 }
 
-
 /* profile picture */
 .profile-picture {
-  margin-top: 30px;
-  width: 14%;
+  width: 16%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(8, 53, 8, 0.5), 0 0 20px rgba(0, 69, 0, 0.3);
 }
 
-/* resume button */
-.button-class{
-  margin-top: 10px;
-  padding: 15px;
-  border-radius: 20px;
-  background-color: rgb(1, 58, 1);
-}
-
-.button-class a {
-  color: white;
-  font-size: 15px;
-  text-decoration: none;
+h1 {
+  font-size: 35px;
 }
 /* tech stack */
 

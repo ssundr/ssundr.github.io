@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Typical from "react-typical";
 
 import {
@@ -56,20 +56,21 @@ import resume from "./files/sneha_resume.pdf";
 
 function App() {
   const [currentCard, setCurrentCard] = useState(0);
-    const cards = [
-        'Card 1 Content',
-        'Card 2 Content',
-        'Card 3 Content'
-        // Add more cards as needed
-    ];
-
-    const nextCard = () => {
-        setCurrentCard((currentCard + 1) % cards.length);
-    };
-
-    const prevCard = () => {
-        setCurrentCard((currentCard - 1 + cards.length) % cards.length);
-    };
+  const cards = [
+    {
+      content:
+        "I'm a student at the University of Illinois Urbana-Champaign currently pursuing a Bachelor of Science in Statistics & Computer Science.",
+    },
+    {
+      content:
+        "I am currently working as a SWE intern at Arrcus on their Customer Solutions Engineering Team.",
+    },
+    {
+      content:
+        "I'm constantly working on new projects and playing around with new tech so be sure to check back soon for some new updates.",
+    },
+    // Add more cards as needed
+  ];
 
   const techStack = [
     {
@@ -242,19 +243,6 @@ function App() {
     },
   ];
 
-  const handleSwipe = (event) => {
-    const xStart = event.touches[0].clientX;
-    const xEnd = event.touches[0].clientX;
-
-    if (xStart - xEnd > 50) {
-        // Swipe left
-        nextCard();
-    } else if (xEnd - xStart > 50) {
-        // Swipe right
-        prevCard();
-    }
-  };
-
   const pastProjects = [
     {
       name: "Library Management System",
@@ -273,6 +261,14 @@ function App() {
       link: "https://github.com/snehasund/spotify-api-fun",
     },
   ];
+
+  const nextCard = () => {
+    setCurrentCard((currentCard + 1) % cards.length);
+  };
+
+  const prevCard = () => {
+    setCurrentCard((currentCard - 1 + cards.length) % cards.length);
+  };
 
   return (
     <div className="App">
@@ -300,128 +296,8 @@ function App() {
         <h1>
           <Typical
             steps={[
-              "W",
-              100,
-              "We",
-              100,
-              "Wel",
-              100,
-              "Welc",
-              100,
-              "Welco",
-              100,
-              "Welcom",
-              100,
-              "Welcome",
-              100,
-              "Welcome ",
-              100,
-              "Welcome t",
-              100,
-              "Welcome to",
-              100,
-              "Welcome to ",
-              100,
-              "Welcome to m",
-              100,
-              "Welcome to my",
-              100,
-              "Welcome to my ",
-              100,
-              "Welcome to my p",
-              100,
-              "Welcome to my po",
-              100,
-              "Welcome to my por",
-              100,
-              "Welcome to my port",
-              100,
-              "Welcome to my portf",
-              100,
-              "Welcome to my portfo",
-              100,
-              "Welcome to my portfol",
-              100,
-              "Welcome to my portfoli",
-              100,
-              "Welcome to my portfolio",
-              100,
-              "Welcome to my portfolio ",
-              100,
-              "Welcome to my portfolio w",
-              100,
-              "Welcome to my portfolio we",
-              100,
-              "Welcome to my portfolio web",
-              100,
-              "Welcome to my portfolio webs",
-              100,
-              "Welcome to my portfolio websi",
-              100,
-              "Welcome to my portfolio websit",
-              100,
-              "Welcome to my portfolio website",
-              100,
-              "Welcome to my portfolio website ",
-              100,
-              "Welcome to my portfolio website :",
-              100,
               "Welcome to my portfolio website :)",
               1000,
-              "I",
-              100,
-              "It",
-              100,
-              "It'",
-              100,
-              "It's",
-              100,
-              "It's ",
-              100,
-              "It's g",
-              100,
-              "It's gr",
-              100,
-              "It's gre",
-              100,
-              "It's grea",
-              100,
-              "It's great",
-              100,
-              "It's great ",
-              100,
-              "It's great t",
-              100,
-              "It's great to",
-              100,
-              "It's great to ",
-              100,
-              "It's great to h",
-              100,
-              "It's great to ha",
-              100,
-              "It's great to hav",
-              100,
-              "It's great to have",
-              100,
-              "It's great to have ",
-              100,
-              "It's great to have y",
-              100,
-              "It's great to have yo",
-              100,
-              "It's great to have you",
-              100,
-              "It's great to have you ",
-              100,
-              "It's great to have you h",
-              100,
-              "It's great to have you he",
-              100,
-              "It's great to have you her",
-              100,
-              "It's great to have you here",
-              100,
               "It's great to have you here!",
               1000,
             ]}
@@ -429,14 +305,29 @@ function App() {
             wrapper="span"
           />
         </h1>
-        <div className="about-me-container" onTouchStart={handleSwipe} onTouchEnd={handleSwipe}>
-            {cards.map((card, index) => (
-                <div key={index} className={`flashcard ${index === currentCard ? 'active' : ''}`}>
-                    {card}
-                </div>
-            ))}
-            <button className="prev-btn" onClick={prevCard}>Previous</button>
-            <button className="next-btn" onClick={nextCard}>Next</button>
+        <div className="flashcard-container">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className={`flashcard ${index === currentCard ? "active" : ""}`}
+            >
+              <div className="flashcard-content">
+                <p>{card.content}</p>
+              </div>
+              <div className="button-container">
+                <a href={resume} download className="download-btn">
+                  Download Resume
+                </a>
+              </div>
+            </div>
+          ))}
+          {/* Previous and next buttons */}
+          <button className="prev-btn" onClick={prevCard}>
+            <span>&#8249;</span> {/* Left arrow */}
+          </button>
+          <button className="next-btn" onClick={nextCard}>
+            <span>&#8250;</span> {/* Right arrow */}
+          </button>
         </div>
       </header>
 
