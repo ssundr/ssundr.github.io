@@ -44,31 +44,6 @@ h5 {
 }
 
 /* about-me section */
-.about-me-card {
-  background-color: #a1b197;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 10px;
-  margin: 0 30px;
-  margin-bottom: 30px;
-  max-width: 70%;
-}
-
-h1 {
-  color: rgb(2, 29, 2);
-  font-size: 35px;
-}
-
-.card-content li {
-  color: rgb(2, 29, 2);
-  font-size: 20px;
-  margin: 10px;
-  text-align: left;
-}
-
-.card-content h3 {
-  font-size: 25px;
-}
 
 
 /* profile picture */
