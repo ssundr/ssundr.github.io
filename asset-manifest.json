@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a26177d.css",
-    "main.js": "/static/js/main.f4478281.js",
+    "main.css": "/static/css/main.310fe36b.css",
+    "main.js": "/static/js/main.d6137a43.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
@@ -10,12 +10,12 @@
     "static/media/sneha_resume.pdf": "/static/media/sneha_resume.0b0ca746c5e5110d224d.pdf",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
     "index.html": "/index.html",
-    "main.1a26177d.css.map": "/static/css/main.1a26177d.css.map",
-    "main.f4478281.js.map": "/static/js/main.f4478281.js.map",
+    "main.310fe36b.css.map": "/static/css/main.310fe36b.css.map",
+    "main.d6137a43.js.map": "/static/js/main.d6137a43.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a26177d.css",
-    "static/js/main.f4478281.js"
+    "static/css/main.310fe36b.css",
+    "static/js/main.d6137a43.js"
   ]
 }
