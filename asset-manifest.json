@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fd1d3be.css",
-    "main.js": "/static/js/main.64fa3bc9.js",
+    "main.css": "/static/css/main.8613e8cc.css",
+    "main.js": "/static/js/main.170ef631.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
@@ -9,13 +9,14 @@
     "static/media/restaurant-recommender.png": "/static/media/restaurant-recommender.3203e80b25185cd86071.png",
     "static/media/sneha_resume.pdf": "/static/media/sneha_resume.2bfd0f611ab4c942917b.pdf",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
+    "static/media/arrcus_logo.png": "/static/media/arrcus_logo.97cf9dd5a771db135eee.png",
     "index.html": "/index.html",
-    "main.5fd1d3be.css.map": "/static/css/main.5fd1d3be.css.map",
-    "main.64fa3bc9.js.map": "/static/js/main.64fa3bc9.js.map",
+    "main.8613e8cc.css.map": "/static/css/main.8613e8cc.css.map",
+    "main.170ef631.js.map": "/static/js/main.170ef631.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5fd1d3be.css",
-    "static/js/main.64fa3bc9.js"
+    "static/css/main.8613e8cc.css",
+    "static/js/main.170ef631.js"
   ]
 }
