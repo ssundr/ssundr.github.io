@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.5fd1d3be.css",
-    "main.js": "/static/js/main.40a2eac1.js",
+    "main.js": "/static/js/main.64fa3bc9.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
     "static/media/profile-picture.jpeg": "/static/media/profile-picture.1252874eba4f64020b63.jpeg",
     "static/media/restaurant-recommender.png": "/static/media/restaurant-recommender.3203e80b25185cd86071.png",
-    "static/media/sneha_resume.pdf": "/static/media/sneha_resume.0b0ca746c5e5110d224d.pdf",
+    "static/media/sneha_resume.pdf": "/static/media/sneha_resume.2bfd0f611ab4c942917b.pdf",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
     "index.html": "/index.html",
     "main.5fd1d3be.css.map": "/static/css/main.5fd1d3be.css.map",
-    "main.40a2eac1.js.map": "/static/js/main.40a2eac1.js.map",
+    "main.64fa3bc9.js.map": "/static/js/main.64fa3bc9.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fd1d3be.css",
-    "static/js/main.40a2eac1.js"
+    "static/js/main.64fa3bc9.js"
   ]
 }
