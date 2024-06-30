@@ -257,7 +257,7 @@ function App() {
       link: "https://terra-docs.s3.us-east-2.amazonaws.com/IJHSR/Articles/volume5-issue2/IJHSR_2023_52_p116.pdf",
     },
     {
-      name: "Playlist Generator (built with the spotify API)",
+      name: "Playlist Generator (built with the Spotify API)",
       link: "https://github.com/snehasund/spotify-api-fun",
     },
   ];
@@ -367,7 +367,7 @@ function App() {
                 {experience.company} -{" "}
                 <span className="date">{experience.date}</span>
               </p>
-              <p>{experience.description}</p>
+              <p className="description">{experience.description}</p>
             </div>
           </div>
         ))}
