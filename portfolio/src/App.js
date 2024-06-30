@@ -341,7 +341,7 @@ function App() {
                 <div style={{ textAlign: "center" }}>
                   {React.cloneElement(tech.icon, {
                     size: 32,
-                    color: "#023020",
+                    color: "#011f14",
                   })}
                 </div>
                 <div style={{ textAlign: "center" }}>{tech.name}</div>

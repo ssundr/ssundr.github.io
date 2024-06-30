@@ -58,7 +58,6 @@ h5 {
   width: 100%; /* Full width of flashcard container */
   height: 100%;
   background-color: #a1b197;
-  border: 1px solid #010c02;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column; /* Ensure button stays below content */
@@ -150,8 +149,10 @@ h1 {
   list-style-type: none; /* no underline */
   padding: 0;
   margin: 30px;
-  background-color: #a1b197;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  background-color: #d5ded0;
 }
 
 .tech-stack:hover {
