@@ -52,10 +52,10 @@ h5 {
   margin: 0 auto; /* Center horizontally */
   height: 280px; /* Adjust height as needed */
   overflow: hidden;
-  margin-bottom: -8.5%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #e0e0e0;
+  margin-bottom: -18%;
 }
 
 .flashcard {
@@ -178,6 +178,7 @@ h1 {
   margin: 10px;
   size: 20px;
 }
+
 
 /* experiences cards */
 
