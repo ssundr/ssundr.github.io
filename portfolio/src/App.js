@@ -36,7 +36,7 @@ import {
 import "./App.css"; // Import your CSS file for styling
 
 // experiences company logos
-import companyLogoX from "./logos/arrcus-logo.jpeg"; // arrcus
+import companyLogoX from "./logos/arrcus_logo.png"; // arrcus
 import companyLogoY from "./logos/iprobe-logo.png"; // msu
 import companyLogoZ from "./logos/data-science.jpeg"; // cs/stat 107 !!
 
