@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: linear-gradient(#72907e, rgb(255, 255, 255));
 }
 
 .App-logo {
@@ -30,7 +31,7 @@ h5 {
 }
 
 .App-header {
-  background-color: #72907e;
+  /* background-color: #72907e; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,13 +52,17 @@ h5 {
   margin: 0 auto; /* Center horizontally */
   height: 280px; /* Adjust height as needed */
   overflow: hidden;
+  margin-bottom: -8.5%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
 }
 
 .flashcard {
   position: absolute;
   width: 100%; /* Full width of flashcard container */
   height: 100%;
-  background-color: #a1b197;
+  background-color: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column; /* Ensure button stays below content */
@@ -68,15 +73,19 @@ h5 {
   opacity: 0;
   transition: opacity 0.3s ease;
   padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px;
+  background-color: #b9cdc1;
 }
 
 .flashcard-container:hover {
   transform: translateY(-5px); /* move card up on hover */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
+  border-radius: 10px;
 }
 
 .flashcard.active {
   opacity: 1;
+  border-radius: 10px;
 }
 
 .flashcard-content {
@@ -130,6 +139,7 @@ h5 {
 
 /* profile picture */
 .profile-picture {
+  margin-top: -10%;
   width: 16%;
   height: auto;
   border-radius: 50%;
@@ -152,7 +162,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: 1px solid #e0e0e0;
-  background-color: #d5ded0;
+  background-color: #b9cdc1;
 }
 
 .tech-stack:hover {
@@ -179,7 +189,7 @@ h2 {
 .card {
   display: flex;
   align-items: center; /* align items vertically */
-  background-color: #fff;
+  background-color: #d8e8de;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
@@ -200,7 +210,6 @@ h2 {
   width: 20%;
   height: 100%;
   margin-right: 20px; /* space between logo and card content */
-  border-radius: 50%;
   object-fit: cover;
   padding-right: 10%;
   padding-left: 20px;
@@ -261,13 +270,13 @@ h2 {
 .coursework-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
   padding: 20px;
   justify-content: center;
 }
 
 .course-card {
-  background-color: #fff;
+  background-color: white;
+  border: 0.5px solid #a7c5b1;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
@@ -317,7 +326,7 @@ h2 {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: #dcebe1;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
