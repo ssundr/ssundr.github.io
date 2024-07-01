@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.362d9cd7.css",
-    "main.js": "/static/js/main.170ef631.js",
+    "main.css": "/static/css/main.287f01c5.css",
+    "main.js": "/static/js/main.bb9cc5c1.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
@@ -11,12 +11,12 @@
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
     "static/media/arrcus_logo.png": "/static/media/arrcus_logo.97cf9dd5a771db135eee.png",
     "index.html": "/index.html",
-    "main.362d9cd7.css.map": "/static/css/main.362d9cd7.css.map",
-    "main.170ef631.js.map": "/static/js/main.170ef631.js.map",
+    "main.287f01c5.css.map": "/static/css/main.287f01c5.css.map",
+    "main.bb9cc5c1.js.map": "/static/js/main.bb9cc5c1.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.362d9cd7.css",
-    "static/js/main.170ef631.js"
+    "static/css/main.287f01c5.css",
+    "static/js/main.bb9cc5c1.js"
   ]
 }
