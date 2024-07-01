@@ -323,7 +323,7 @@ h2 {
   overflow: hidden; /* image doesn't overflow the card */
 }
 
-.course-card p {
+.course-card a {
   /* Center the text horizontally and vertically */
   text-align: center;
   display: flex;
@@ -331,6 +331,7 @@ h2 {
   justify-content: center;
   height: 100%; /* Ensure the text takes full height */
   margin: 0; /* Remove default margins */
+  color: rgb(0, 91, 0);
 }
 
 .course-card::before {
@@ -344,7 +345,7 @@ h2 {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
 }
 
-.course-card:hover p {
+.course-card:hover a {
   display: none;
   margin: 0;
 }

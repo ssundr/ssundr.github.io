@@ -259,17 +259,18 @@ function App() {
   ];
 
   const coursework = [
-    { name: "Data Structures", number: "CS 225" },
-    { name: "Artificial Intelligence", number: "CS 440" },
-    { name: "Database Systems", number: "CS 411" },
-    { name: "Statistics & Probability", number: "STAT 400 & STAT 410" },
-    { name: "Statistical Modeling", number: "STAT 425" },
-    { name: "Discrete Structures", number: "CS 173" },
-    { name: "Data Science Discovery", number: "CS 107" },
-    { name: "Computer Systems", number: "CS 340" },
-    { name: "Software Design Lab", number: "CS 222" },
-    { name: "Programming Methodologies in C++", number: "CS 128" },
+    { name: "Data Structures", number: "CS 225", url: "https://cs.illinois.edu/academics/courses/cs225" },
+    { name: "Artificial Intelligence", number: "CS 440", url: "https://cs.illinois.edu/academics/courses/cs440" },
+    { name: "Database Systems", number: "CS 411", url: "https://cs.illinois.edu/academics/courses/cs411" },
+    { name: "Statistics & Probability", number: "STAT 400 & STAT 410", url: "https://stat.illinois.edu/academics/courses/stat400" },
+    { name: "Statistical Modeling", number: "STAT 425", url: "https://stat.illinois.edu/academics/courses/stat425" },
+    { name: "Discrete Structures", number: "CS 173", url: "https://cs.illinois.edu/academics/courses/cs173" },
+    { name: "Data Science Discovery", number: "CS 107", url: "https://cs.illinois.edu/academics/courses/cs107" },
+    { name: "Computer Systems", number: "CS 340", url: "https://cs.illinois.edu/academics/courses/cs340" },
+    { name: "Software Design Lab", number: "CS 222", url: "https://cs.illinois.edu/academics/courses/cs222" },
+    { name: "Programming Methodologies in C++", number: "CS 128", url: "https://cs.illinois.edu/academics/courses/cs128" },
   ];
+  
 
   const projects = [
     {
@@ -400,7 +401,7 @@ function App() {
       <div class="boxes">
         {/* Languages Card */}
         <div className="tech-card">
-          <h3>Languages</h3>
+          <h3>Programming Languages</h3>
           <div className="tech-stack languages">
             {techStack
               .filter((tech) => tech.type == "language") // Adjust the type filter as needed ("language", "framework", etc.)
@@ -539,7 +540,7 @@ function App() {
               key={index}
               data-number={course.number}
             >
-              <p>{course.name}</p>
+              <a>{course.name}</a>
             </div>
           ))}
         </div>
