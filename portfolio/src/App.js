@@ -75,95 +75,157 @@ function App() {
   const techStack = [
     {
       name: "JavaScript",
+      type: "language",
       icon: <FaJsSquare />,
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
     },
     {
       name: "npm",
+      type: "technology",
       icon: <FaNpm />,
       url: "https://www.npmjs.com",
     },
     {
       name: "HTML",
+      type: "language",
       icon: <FaHtml5 />,
       url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
     },
     {
       name: "CSS",
+      type: "language",
       icon: <FaCss3Alt />,
       url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     },
-    { name: "Python", icon: <FaPython />, url: "https://www.python.org/doc/" },
-    { name: "Java", icon: <FaJava />, url: "https://docs.oracle.com/en/java/" },
-    { name: "R", icon: <FaRProject />, url: "https://www.rdocumentation.org/" },
+    {
+      name: "Python",
+      type: "language",
+      icon: <FaPython />,
+      url: "https://www.python.org/doc/",
+    },
+    {
+      name: "Java",
+      type: "language",
+      icon: <FaJava />,
+      url: "https://docs.oracle.com/en/java/",
+    },
+    {
+      name: "R",
+      type: "language",
+      icon: <FaRProject />,
+      url: "https://www.rdocumentation.org/",
+    },
     {
       name: "Django",
+      type: "framework",
       icon: <SiDjango />,
       url: "https://docs.djangoproject.com/en/stable/",
-    }, // Django with custom icon
+    },
     {
       name: "PyTorch",
+      type: "technology",
       icon: <FaFire />,
       url: "https://pytorch.org/docs/stable/index.html",
-    }, // PyTorch added
-    { name: "NumPy", icon: <SiNumpy />, url: "https://numpy.org/doc/" },
-    { name: "JSON", icon: <FaFileCode />, url: "https://www.json.org/" }, // JSON added
+    },
+    {
+      name: "NumPy",
+      type: "technology",
+      icon: <SiNumpy />,
+      url: "https://numpy.org/doc/",
+    },
+    {
+      name: "JSON",
+      type: "technology",
+      icon: <FaFileCode />,
+      url: "https://www.json.org/",
+    },
     {
       name: "TypeScript",
+      type: "language",
       icon: <SiTypescript />,
       url: "https://www.typescriptlang.org/docs/",
-    }, // TypeScript added
+    },
     {
       name: "C",
+      type: "language",
       icon: <FaCuttlefish />,
       url: "https://en.cppreference.com/w/c/language",
-    }, // C added
+    },
     {
       name: "C++",
+      type: "language",
       icon: <CgCPlusPlus />,
       url: "https://en.cppreference.com/w/cpp",
-    }, // C++ added
+    },
     {
       name: "React",
+      type: "framework",
       icon: <FaReact />,
       url: "https://reactjs.org/docs/getting-started.html",
-    }, // React added
+    },
     {
       name: "Flask",
+      type: "framework",
       icon: <SiFlask />,
       url: "https://flask.palletsprojects.com/en/2.0.x/",
     },
     {
       name: "VSCode",
+      type: "technology",
       icon: <FaCode />,
       url: "https://code.visualstudio.com/docs",
-    }, // VSCode added
-    { name: "Docker", icon: <FaDocker />, url: "https://docs.docker.com/" },
-    { name: "MongoDB", icon: <SiMongodb />, url: "https://docs.mongodb.com/" },
-    { name: "Git", icon: <FaGitAlt />, url: "https://git-scm.com/doc" }, // Git added
+    },
+    {
+      name: "Docker",
+      type: "technology",
+      icon: <FaDocker />,
+      url: "https://docs.docker.com/",
+    },
+    {
+      name: "MongoDB",
+      type: "technology",
+      icon: <SiMongodb />,
+      url: "https://docs.mongodb.com/",
+    },
+    {
+      name: "Git",
+      type: "technology",
+      icon: <FaGitAlt />,
+      url: "https://git-scm.com/doc",
+    },
     {
       name: "TensorFlow",
+      type: "technology",
       icon: <SiTensorflow />,
       url: "https://www.tensorflow.org/guide",
-    }, // TensorFlow added
+    },
     {
       name: "Opencv",
+      type: "technology",
       icon: <SiOpencv />,
       url: "https://docs.opencv.org/master/",
     },
-    { name: "Keras", icon: <SiKeras />, url: "https://keras.io/" }, // Keras added
+    {
+      name: "Keras",
+      type: "technology",
+      icon: <SiKeras />,
+      url: "https://keras.io/",
+    },
     {
       name: "Pandas",
+      type: "technology",
       icon: <SiPandas />,
       url: "https://pandas.pydata.org/docs/",
-    }, // Pandas added
+    },
     {
       name: "GANs",
+      type: "technology",
       icon: <FaDiceD20 />,
       url: "https://en.wikipedia.org/wiki/Generative_adversarial_network",
-    }, // GANs added
+    },
     {
       name: "PyCharm",
+      type: "technology",
       icon: <SiPycharm />,
       url: "https://www.jetbrains.com/pycharm/documentation/",
     },
@@ -294,14 +356,17 @@ function App() {
       <header className="App-header">
         <img src={profilePicture} alt="Profile" className="profile-picture" />
         <h1>
-        <ReactTyped
-          strings={["Welcome to my portfolio website :)", "It's great to have you here!"]}
-          typeSpeed={100}
-          loop
-          backSpeed={50}
-          cursorChar="|"
-          showCursor={true}
-        />
+          <ReactTyped
+            strings={[
+              "Welcome to my portfolio website :)",
+              "It's great to have you here!",
+            ]}
+            typeSpeed={100}
+            loop
+            backSpeed={50}
+            cursorChar="|"
+            showCursor={true}
+          />
         </h1>
         <div className="flashcard-container">
           {cards.map((card, index) => (
@@ -332,25 +397,60 @@ function App() {
       {/* Tech Stack Section */}
       <section className="section">
         <h2>Tech Stack</h2>
-        <div className="tech-stack">
-          {techStack.map((tech, index) => (
-            <div key={index} className="tech-item">
-              <a
-                href={tech.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: "green" }}
-              >
-                <div style={{ textAlign: "center" }}>
-                  {React.cloneElement(tech.icon, {
-                    size: 32,
-                    color: "#011f14",
-                  })}
+      <div class="boxes">
+        {/* Languages Card */}
+        <div className="tech-card">
+          <h3>Languages</h3>
+          <div className="tech-stack languages">
+            {techStack
+              .filter((tech) => tech.type == "language") // Adjust the type filter as needed ("language", "framework", etc.)
+              .map((tech, index) => (
+                <div key={index} className="tech-item">
+                  <a
+                    href={tech.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "green", padding: "30px"}}
+                  >
+                    <div style={{ textAlign: "center" }}>
+                      {React.cloneElement(tech.icon, {
+                        size: 40,
+                        color: "#011f14",
+                      })}
+                    </div>
+                    <div style={{ textAlign: "center" }}>{tech.name}</div>
+                  </a>
                 </div>
-                <div style={{ textAlign: "center" }}>{tech.name}</div>
-              </a>
-            </div>
-          ))}
+              ))}
+          </div>
+        </div>
+
+        {/* Frameworks and Technologies Card */}
+        <div className="tech-card">
+          <h3>Frameworks/Technologies</h3>
+          <div className="tech-stack frameworks">
+            {techStack
+              .filter((tech) => tech.type !== "language") // Adjust the type filter as needed ("language", "framework", etc.)
+              .map((tech, index) => (
+                <div key={index} className="tech-item">
+                  <a
+                    href={tech.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "green" }}
+                  >
+                    <div style={{ textAlign: "center" }}>
+                      {React.cloneElement(tech.icon, {
+                        size: 32,
+                        color: "#011f14",
+                      })}
+                    </div>
+                    <div style={{ textAlign: "center" }}>{tech.name}</div>
+                  </a>
+                </div>
+              ))}
+          </div>
+          </div>
         </div>
       </section>
 

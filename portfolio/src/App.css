@@ -151,31 +151,67 @@ h1 {
 }
 /* tech stack */
 
-.tech-stack {
+.section {
+  display: block;
+  justify-content: space-around; /* Space evenly between cards */
+  margin-bottom: 30px; /* Add some bottom margin */
+}
+
+.boxes {
   display: flex;
-  justify-content: center; /* centers items horizontally */
-  flex-wrap: wrap; /* allows items to wrap to the next line if necessary */
-  list-style-type: none; /* no underline */
-  padding: 0;
-  margin: 30px;
+  margin: 20px;
+}
+
+.tech-card {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: 1px solid #e0e0e0;
   background-color: #fafefb;
+  max-width: 50%;
 }
 
-.tech-stack:hover {
-  transform: translateY(-5px); /* move card up on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
+.tech-card:hover {
+  transform: translateY(-5px); /* Move card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Larger box shadow on hover */
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .tech-item {
-  flex-basis: calc(100% / 20); /* adjust the number to control the number of items per row */
+  flex-basis: calc(100% / 7); /* Adjust based on the number of items per row */
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 10px;
-  size: 20px;
+}
+
+.tech-item:hover {
+  transform: translateY(-5px); /* move card up on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
+}
+
+.tech-item a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+.tech-item a:hover {
+  color: green;
+}
+
+.tech-item div {
+  margin-top: 5px;
 }
 
 
