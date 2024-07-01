@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Typical from "react-typical";
+import { ReactTyped } from "react-typed";
 
 import {
   SiDjango,
@@ -59,11 +59,11 @@ function App() {
   const cards = [
     {
       content:
-        "I'm a student at the University of Illinois Urbana-Champaign currently pursuing a Bachelor of Science in Statistics & Computer Science.",
+        "I'm a student at the University of Illinois Urbana-Champaign pursuing a Bachelor of Science in Statistics & Computer Science.",
     },
     {
       content:
-        "I am currently working as a SWE intern at Arrcus on their Customer Solutions Engineering Team.",
+        "I'm currently working as a SWE intern at Arrcus on their Customer Solutions Engineering Team.",
     },
     {
       content:
@@ -175,7 +175,7 @@ function App() {
       company: "Arrcus, Inc",
       date: "Summer 2024",
       description:
-        "I utilized Python libraries such as pexpect and paramiko to automate SSH connections to devices, parse error messages, and implemented multithreading for efficient parsing of JSON files to collect device information for numerous devices.",
+        "I worked on the customer solutions engineering team to automate customer processes, focusing on streamlining the implementation of networking protocols on proprietary hardware. I also utilized Python libraries such as pexpect and paramiko for automating SSH connections, parsing error messages, and implemented multi-threading to efficiently gather device information from numerous devices using JSON files.",
       logo: companyLogoX,
     },
     {
@@ -294,16 +294,14 @@ function App() {
       <header className="App-header">
         <img src={profilePicture} alt="Profile" className="profile-picture" />
         <h1>
-          <Typical
-            steps={[
-              "Welcome to my portfolio website :)",
-              1000,
-              "It's great to have you here!",
-              1000,
-            ]}
-            loop={Infinity}
-            wrapper="span"
-          />
+        <ReactTyped
+          strings={["Welcome to my portfolio website :)", "It's great to have you here!"]}
+          typeSpeed={100}
+          loop
+          backSpeed={50}
+          cursorChar="|"
+          showCursor={true}
+        />
         </h1>
         <div className="flashcard-container">
           {cards.map((card, index) => (
@@ -337,7 +335,12 @@ function App() {
         <div className="tech-stack">
           {techStack.map((tech, index) => (
             <div key={index} className="tech-item">
-              <a href={tech.url} target="_blank" rel="noopener noreferrer" style={{ color: 'green' }}>
+              <a
+                href={tech.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "green" }}
+              >
                 <div style={{ textAlign: "center" }}>
                   {React.cloneElement(tech.icon, {
                     size: 32,
