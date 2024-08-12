@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.287f01c5.css",
-    "main.js": "/static/js/main.0ba385ba.js",
+    "main.js": "/static/js/main.5f76cf62.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
@@ -13,11 +13,11 @@
     "static/media/data-science.png": "/static/media/data-science.46f66ca4c20eb97397ff.png",
     "index.html": "/index.html",
     "main.287f01c5.css.map": "/static/css/main.287f01c5.css.map",
-    "main.0ba385ba.js.map": "/static/js/main.0ba385ba.js.map",
+    "main.5f76cf62.js.map": "/static/js/main.5f76cf62.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.287f01c5.css",
-    "static/js/main.0ba385ba.js"
+    "static/js/main.5f76cf62.js"
   ]
 }
