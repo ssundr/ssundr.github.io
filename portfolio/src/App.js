@@ -380,7 +380,7 @@ function App() {
               </div>
               <div className="button-container">
                 <a href={resume} download className="download-btn">
-                  Download Resume
+                  Download My Resume
                 </a>
               </div>
             </div>
