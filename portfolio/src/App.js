@@ -11,7 +11,6 @@ import {
   SiTypescript,
   SiNumpy,
   SiOpencv,
-  SiMongodb,
 } from "react-icons/si";
 import { CgCPlusPlus } from "react-icons/cg";
 
@@ -23,14 +22,11 @@ import {
   FaJava,
   FaRProject,
   FaFire,
-  FaFileCode,
   FaReact,
   FaCode,
   FaGitAlt,
   FaCuttlefish,
   FaDiceD20,
-  FaDocker,
-  FaNpm,
 } from "react-icons/fa";
 
 import "./App.css"; // Import your CSS file for styling
@@ -78,12 +74,6 @@ function App() {
       type: "language",
       icon: <FaJsSquare />,
       url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
-      name: "npm",
-      type: "technology",
-      icon: <FaNpm />,
-      url: "https://www.npmjs.com",
     },
     {
       name: "HTML",
@@ -134,12 +124,6 @@ function App() {
       url: "https://numpy.org/doc/",
     },
     {
-      name: "JSON",
-      type: "technology",
-      icon: <FaFileCode />,
-      url: "https://www.json.org/",
-    },
-    {
       name: "TypeScript",
       type: "language",
       icon: <SiTypescript />,
@@ -164,34 +148,16 @@ function App() {
       url: "https://reactjs.org/docs/getting-started.html",
     },
     {
-      name: "Flask",
-      type: "framework",
-      icon: <SiFlask />,
-      url: "https://flask.palletsprojects.com/en/2.0.x/",
-    },
-    {
-      name: "VSCode",
-      type: "technology",
-      icon: <FaCode />,
-      url: "https://code.visualstudio.com/docs",
-    },
-    {
-      name: "Docker",
-      type: "technology",
-      icon: <FaDocker />,
-      url: "https://docs.docker.com/",
-    },
-    {
-      name: "MongoDB",
-      type: "technology",
-      icon: <SiMongodb />,
-      url: "https://docs.mongodb.com/",
-    },
-    {
       name: "Git",
       type: "technology",
       icon: <FaGitAlt />,
       url: "https://git-scm.com/doc",
+    },
+    {
+      name: "GANs",
+      type: "technology",
+      icon: <FaDiceD20 />,
+      url: "https://en.wikipedia.org/wiki/Generative_adversarial_network",
     },
     {
       name: "TensorFlow",
@@ -212,16 +178,22 @@ function App() {
       url: "https://keras.io/",
     },
     {
+      name: "Flask",
+      type: "framework",
+      icon: <SiFlask />,
+      url: "https://flask.palletsprojects.com/en/2.0.x/",
+    },
+    {
       name: "Pandas",
       type: "technology",
       icon: <SiPandas />,
       url: "https://pandas.pydata.org/docs/",
     },
     {
-      name: "GANs",
+      name: "VSCode",
       type: "technology",
-      icon: <FaDiceD20 />,
-      url: "https://en.wikipedia.org/wiki/Generative_adversarial_network",
+      icon: <FaCode />,
+      url: "https://code.visualstudio.com/docs",
     },
     {
       name: "PyCharm",
