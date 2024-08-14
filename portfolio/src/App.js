@@ -209,7 +209,7 @@ function App() {
       company: "Arrcus, Inc",
       date: "Summer 2024",
       description:
-        "I worked on the customer solutions engineering team to automate customer processes, focusing on streamlining the implementation of networking protocols on proprietary hardware. I also utilized Python libraries such as pexpect and paramiko for automating SSH connections, parsing error messages, and implemented multi-threading to efficiently gather device information from numerous devices using JSON files.",
+        "I developed a script for the Customer Solutions Engineering Team that analyzes and categorizes network device log errors by protocol, identifies error trends, and sends tailored email reports. It also generates a dataset to be used for training deep learning algorithms, enabling advanced data analysis of our devices' performance.",
       logo: companyLogoX,
     },
     {
