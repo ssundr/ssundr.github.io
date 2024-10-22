@@ -46,7 +46,7 @@ import summarizer from "./images/summarizer.png";
 import generatedFaces from "./images/generated-faces.png";
 
 // resume
-import resume from "./files/sneha-fa24-resume.pdf";
+import resume from "./files/sneha_resume_oct24.pdf";
 
 // add download button for research paper here
 
