@@ -31,11 +31,6 @@ import {
 
 import "./App.css"; // Import your CSS file for styling
 
-// experiences company logos
-import companyLogoX from "./logos/arrcus_logo.png"; // arrcus
-import companyLogoY from "./logos/iprobe-logo.png"; // msu
-import companyLogoZ from "./logos/data-science.png"; // cs/stat 107 !!
-
 // prof pic
 import profilePicture from "./images/profile-picture.jpeg"; // Import your profile picture
 
@@ -106,12 +101,6 @@ function App() {
       url: "https://www.rdocumentation.org/",
     },
     {
-      name: "Django",
-      type: "framework",
-      icon: <SiDjango />,
-      url: "https://docs.djangoproject.com/en/stable/",
-    },
-    {
       name: "PyTorch",
       type: "technology",
       icon: <FaFire />,
@@ -130,12 +119,6 @@ function App() {
       url: "https://www.typescriptlang.org/docs/",
     },
     {
-      name: "C",
-      type: "language",
-      icon: <FaCuttlefish />,
-      url: "https://en.cppreference.com/w/c/language",
-    },
-    {
       name: "C++",
       type: "language",
       icon: <CgCPlusPlus />,
@@ -148,28 +131,22 @@ function App() {
       url: "https://reactjs.org/docs/getting-started.html",
     },
     {
+      name: "Django",
+      type: "framework",
+      icon: <SiDjango />,
+      url: "https://docs.djangoproject.com/en/stable/",
+    },
+    {
       name: "Git",
       type: "technology",
       icon: <FaGitAlt />,
       url: "https://git-scm.com/doc",
     },
     {
-      name: "GANs",
-      type: "technology",
-      icon: <FaDiceD20 />,
-      url: "https://en.wikipedia.org/wiki/Generative_adversarial_network",
-    },
-    {
       name: "TensorFlow",
       type: "technology",
       icon: <SiTensorflow />,
       url: "https://www.tensorflow.org/guide",
-    },
-    {
-      name: "Opencv",
-      type: "technology",
-      icon: <SiOpencv />,
-      url: "https://docs.opencv.org/master/",
     },
     {
       name: "Keras",
@@ -194,39 +171,6 @@ function App() {
       type: "technology",
       icon: <FaCode />,
       url: "https://code.visualstudio.com/docs",
-    },
-    {
-      name: "PyCharm",
-      type: "technology",
-      icon: <SiPycharm />,
-      url: "https://www.jetbrains.com/pycharm/documentation/",
-    },
-  ];
-
-  const experiences = [
-    {
-      title: "Software Engineering Intern",
-      company: "Arrcus, Inc",
-      date: "Summer 2024",
-      description:
-        "I developed a script for the Customer Solutions Engineering Team that analyzes and categorizes network device log errors by protocol, identifies error trends, and sends tailored email reports. It also generates a dataset to be used for training deep learning algorithms, enabling advanced data analysis of our devices' performance.",
-      logo: companyLogoX,
-    },
-    {
-      title: "Data Science Discovery Course Assistant",
-      company: "University of Illinois Urbana-Champaign",
-      date: "Jan 2024 - Present",
-      description:
-        "I fostered an interactive learning environment during lab sessions by encouraging student participation and providing hands-on guidance to enhance comprehension of course material, and offered support during regular office hours, where I addressed individual questions, clarified concepts, and provided additional resources to aid students in their academic progress.",
-      logo: companyLogoZ,
-    },
-    {
-      title: "Research Intern @ iPRoBe Lab",
-      company: "Michigan State University",
-      date: "Summer 2022",
-      description:
-        "I worked with Dr. Arun Ross to develop an emotion-recognition algorithm using PyTorch, conducted data analysis on model outcomes to evaluate its precision in relation to established models, and performed data analysis on results of the model to test its accuracy compared to existing models.",
-      logo: companyLogoY,
     },
   ];
 
@@ -367,88 +311,6 @@ function App() {
         </div>
       </header>
 
-      {/* Tech Stack Section */}
-      <section className="section">
-        <h2>Tech Stack</h2>
-      <div class="boxes">
-        {/* Languages Card */}
-        <div className="tech-card">
-          <h3>Programming Languages</h3>
-          <div className="tech-stack languages">
-            {techStack
-              .filter((tech) => tech.type == "language") // Adjust the type filter as needed ("language", "framework", etc.)
-              .map((tech, index) => (
-                <div key={index} className="tech-item">
-                  <a
-                    href={tech.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "green"}}
-                  >
-                    <div style={{ textAlign: "center" }}>
-                      {React.cloneElement(tech.icon, {
-                        size: 32,
-                        color: "#011f14",
-                      })}
-                    </div>
-                    <div style={{ textAlign: "center" }}>{tech.name}</div>
-                  </a>
-                </div>
-              ))}
-          </div>
-        </div>
-
-        {/* Frameworks and Technologies Card */}
-        <div className="tech-card">
-          <h3>Frameworks/Technologies</h3>
-          <div className="tech-stack frameworks">
-            {techStack
-              .filter((tech) => tech.type !== "language") // Adjust the type filter as needed ("language", "framework", etc.)
-              .map((tech, index) => (
-                <div key={index} className="tech-item">
-                  <a
-                    href={tech.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "green" }}
-                  >
-                    <div style={{ textAlign: "center" }}>
-                      {React.cloneElement(tech.icon, {
-                        size: 32,
-                        color: "#011f14",
-                      })}
-                    </div>
-                    <div style={{ textAlign: "center" }}>{tech.name}</div>
-                  </a>
-                </div>
-              ))}
-          </div>
-          </div>
-        </div>
-      </section>
-
-      {/* experiences section */}
-      <section className="section">
-        <h2>Experiences</h2>
-        {experiences.map((experience, index) => (
-          <div key={index} className="card">
-            <img
-              src={experience.logo}
-              alt={`${experience.company} Logo`}
-              className="logo"
-            />
-            <div class="experience-text">
-              <h3>{experience.title}</h3>
-              <p className="company">
-                {experience.company} -{" "}
-                <span className="date">{experience.date}</span>
-              </p>
-              <p className="description">{experience.description}</p>
-            </div>
-          </div>
-        ))}
-      </section>
-
       {/* projects section */}
       <section className="section">
         <h2>Current Projects</h2>
@@ -501,6 +363,67 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Tech Stack Section */}
+      <section className="section">
+        <h2>some of my most-used tech!</h2>
+      <div class="boxes">
+        {/* Languages Card */}
+        <div className="tech-card">
+          <h3>Programming Languages</h3>
+          <div className="tech-stack languages">
+            {techStack
+              .filter((tech) => tech.type === "language") // Adjust the type filter as needed ("language", "framework", etc.)
+              .map((tech, index) => (
+                <div key={index} className="tech-item">
+                  <a
+                    href={tech.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "green"}}
+                  >
+                    <div style={{ textAlign: "center" }}>
+                      {React.cloneElement(tech.icon, {
+                        size: 32,
+                        color: "#011f14",
+                      })}
+                    </div>
+                    <div style={{ textAlign: "center" }}>{tech.name}</div>
+                  </a>
+                </div>
+              ))}
+          </div>
+        </div>
+
+        {/* Frameworks and Technologies Card */}
+        <div className="tech-card">
+          <h3>Frameworks/Technologies</h3>
+          <div className="tech-stack frameworks">
+            {techStack
+              .filter((tech) => tech.type !== "language") // Adjust the type filter as needed ("language", "framework", etc.)
+              .map((tech, index) => (
+                <div key={index} className="tech-item">
+                  <a
+                    href={tech.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "green" }}
+                  >
+                    <div style={{ textAlign: "center" }}>
+                      {React.cloneElement(tech.icon, {
+                        size: 32,
+                        color: "#011f14",
+                      })}
+                    </div>
+                    <div style={{ textAlign: "center" }}>{tech.name}</div>
+                  </a>
+                </div>
+              ))}
+          </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* coursework section */}
       <section className="section">

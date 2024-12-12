@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(#9cb1a4, rgb(255, 255, 255));
+  background-image: linear-gradient(#d4e3da, rgb(255, 255, 255));
 }
 
 .App-logo {
@@ -31,7 +31,6 @@ h5 {
 }
 
 .App-header {
-  /* background-color: #72907e; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -169,7 +168,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: 1px solid #e0e0e0;
-  background-color: #f1f7f3;
+  background-color: #ffffff;
   max-width: 50%;
 }
 
@@ -214,76 +213,6 @@ h1 {
   margin-top: 5px;
 }
 
-
-/* experiences cards */
-
-h2 {
-  font-size: 35px;
-  color: #011f14;
-}
-
-.card {
-  display: flex;
-  align-items: center; /* align items vertically */
-  background-color: #fafefb;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 20px;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 70%;
-  height: auto;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.card:hover {
-  transform: translateY(-5px); /* move card up on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
-}
-
-.card .logo {
-  width: 20%;
-  height: 100%;
-  margin-right: 20px; /* space between logo and card content */
-  object-fit: cover;
-  padding-right: 10%;
-  padding-left: 20px;
-}
-
-.card-content {
-  flex: 1; /* allows card content to expand to fill remaining space */
-  color: #011f14;
-}
-
-.card h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin-bottom: 0;
-  color: #555;
-}
-
-.card .company {
-  font-weight: bold;
-}
-
-.card .date {
-  color: #474747;
-}
-
-.card .description {
-  color: #011f14;
-}
-
-.experience-text {
-  width: 60%;
-  border: 3px solid #72907e;
-  padding: 20px;
-  padding-bottom: 40px;
-}
 /* coursework section */
 
 .section ul {
@@ -331,7 +260,7 @@ h2 {
   justify-content: center;
   height: 100%; /* Ensure the text takes full height */
   margin: 0; /* Remove default margins */
-  color: rgb(0, 91, 0);
+  color: rgb(1, 43, 1);
 }
 
 .course-card::before {
@@ -368,7 +297,7 @@ h2 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
   padding: 22px;
-  width: 300px;
+  width: 250px;
   transition: transform 0.3s ease;
   position: relative;
   overflow: hidden; /* image doesn't overflow the card */
