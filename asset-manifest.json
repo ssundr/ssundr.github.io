@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.7d7ea559.css",
-    "main.js": "/static/js/main.31322749.js",
+    "main.js": "/static/js/main.278b3fff.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
     "static/media/profile-picture.jpeg": "/static/media/profile-picture.1252874eba4f64020b63.jpeg",
-    "static/media/Sneha_Sundar_CV_fa24.pdf": "/static/media/Sneha_Sundar_CV_fa24.7a6b60f35eb9467562b5.pdf",
+    "static/media/sneha_sundar_cv.pdf": "/static/media/sneha_sundar_cv.45db5e74adb04a9ccbbf.pdf",
     "static/media/restaurant-recommender.png": "/static/media/restaurant-recommender.3203e80b25185cd86071.png",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
     "static/media/arrcus_logo.png": "/static/media/arrcus_logo.97cf9dd5a771db135eee.png",
     "static/media/data-science.png": "/static/media/data-science.46f66ca4c20eb97397ff.png",
     "index.html": "/index.html",
     "main.7d7ea559.css.map": "/static/css/main.7d7ea559.css.map",
-    "main.31322749.js.map": "/static/js/main.31322749.js.map",
+    "main.278b3fff.js.map": "/static/js/main.278b3fff.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7d7ea559.css",
-    "static/js/main.31322749.js"
+    "static/js/main.278b3fff.js"
   ]
 }
