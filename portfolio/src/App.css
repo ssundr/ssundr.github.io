@@ -26,6 +26,135 @@
   }
 }
 
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  max-width: 700px;
+  text-align: justify;
+  margin-right: 20px;
+  margin-bottom: -4%;
+}
+
+.graph-node-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; /* Allow for positioning lines between nodes */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.node {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #011f14;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  position: relative; /* For positioning the line */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.node:hover {
+  transform: scale(1.2);
+  background-color: #4CAF50;
+}
+
+.node[data-node="NLP"]:hover {
+  background-color: #2c6a79;
+}
+
+.node[data-node="AI"]:hover {
+  background-color: #fd7e14;
+}
+
+.node[data-node="Data Science"]:hover {
+  background-color: #007bff;
+}
+
+.node[data-node="Machine Learning"]:hover {
+  background-color: #6610f2;
+}
+
+.node[data-node="Research"]:hover {
+  background-color: #e83e8c;
+}
+
+.node:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 100%; /* Position the line below the node */
+  left: 50%;
+  transform: translateX(-50%); /* Center the line horizontally */
+  width: 2px; /* Width of the line */
+  height: 40px; /* Length of the line (adjust as needed) */
+  background-color: #011f14; /* Color of the line */
+}
+
+/* Remove any line through the last node */
+.node:last-child::after {
+  content: none;
+}
+
+
+.graph-node-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+.graph-node-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: transparent; /* Remove the line through text */
+  transform: translateY(-50%); /* Center the line vertically */
+}
+
+
+.button-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.intro h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #333;
+}
+
 h5 {
   font-size: 40px;
 }
@@ -41,60 +170,6 @@ h5 {
 
 .App-link {
   color: #61dafb;
-}
-
-/* about-me section */
-.flashcard-container {
-  position: relative;
-  width: 90%; /* Set width to 80% of the screen */
-  max-width: 800px; /* Optionally set a max-width for responsiveness */
-  margin: 0 auto; /* Center horizontally */
-  height: 280px; /* Adjust height as needed */
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e0e0e0;
-  margin-bottom: -26%;
-}
-
-.flashcard {
-  position: absolute;
-  width: 100%; /* Full width of flashcard container */
-  height: 100%;
-  background-color: #ebf2ed;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column; /* Ensure button stays below content */
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  user-select: none; /* Disable text selection */
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  padding: 20px; /* Adjust padding as needed */
-  border-radius: 10px;
-}
-
-.flashcard-container:hover {
-  transform: translateY(-5px); /* move card up on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
-  border-radius: 10px;
-}
-
-.flashcard.active {
-  opacity: 1;
-  border-radius: 10px;
-}
-
-.flashcard-content {
-  max-width: 60%; /* Limit content width */
-  text-align: center; /* Center content */
-  margin-top: -30px;
-  margin-bottom: 2%;
-}
-
-.flashcard-content p {
-  color: #011f14;
 }
 
 .download-btn {
@@ -137,8 +212,8 @@ h5 {
 
 /* profile picture */
 .profile-picture {
-  margin-top: -30%;
-  width: 16%;
+  margin-top: 3%;
+  width: 60%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(8, 53, 8, 0.5), 0 0 20px rgba(0, 69, 0, 0.3);

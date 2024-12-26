@@ -41,7 +41,7 @@ import summarizer from "./images/summarizer.png";
 import generatedFaces from "./images/generated-faces.png";
 
 // resume
-import resume from "./files/sneha_sundar_cv.pdf"; 
+import resume from "./files/sneha_sundar_cv.pdf";
 
 // add download button for research paper here
 
@@ -50,7 +50,7 @@ function App() {
   const cards = [
     {
       content:
-       "I'm pursuing a Bachelor of Science in Statistics & Computer Science at the University of Illinois Urbana-Champaign."
+        "I'm pursuing a Bachelor of Science in Statistics & Computer Science at the University of Illinois Urbana-Champaign.",
     },
     {
       content:
@@ -175,18 +175,57 @@ function App() {
   ];
 
   const coursework = [
-    { name: "Data Structures", number: "CS 225", url: "https://cs.illinois.edu/academics/courses/cs225" },
-    { name: "Artificial Intelligence", number: "CS 440", url: "https://cs.illinois.edu/academics/courses/cs440" },
-    { name: "Database Systems", number: "CS 411", url: "https://cs.illinois.edu/academics/courses/cs411" },
-    { name: "Statistics & Probability", number: "STAT 400 & STAT 410", url: "https://stat.illinois.edu/academics/courses/stat400" },
-    { name: "Statistical Modeling", number: "STAT 425", url: "https://stat.illinois.edu/academics/courses/stat425" },
-    { name: "Discrete Structures", number: "CS 173", url: "https://cs.illinois.edu/academics/courses/cs173" },
-    { name: "Data Science Discovery", number: "CS 107", url: "https://cs.illinois.edu/academics/courses/cs107" },
-    { name: "Computer Systems", number: "CS 340", url: "https://cs.illinois.edu/academics/courses/cs340" },
-    { name: "Software Design Lab", number: "CS 222", url: "https://cs.illinois.edu/academics/courses/cs222" },
-    { name: "Programming Methodologies in C++", number: "CS 128", url: "https://cs.illinois.edu/academics/courses/cs128" },
+    {
+      name: "Data Structures",
+      number: "CS 225",
+      url: "https://cs.illinois.edu/academics/courses/cs225",
+    },
+    {
+      name: "Artificial Intelligence",
+      number: "CS 440",
+      url: "https://cs.illinois.edu/academics/courses/cs440",
+    },
+    {
+      name: "Database Systems",
+      number: "CS 411",
+      url: "https://cs.illinois.edu/academics/courses/cs411",
+    },
+    {
+      name: "Statistics & Probability",
+      number: "STAT 400 & STAT 410",
+      url: "https://stat.illinois.edu/academics/courses/stat400",
+    },
+    {
+      name: "Statistical Modeling",
+      number: "STAT 425",
+      url: "https://stat.illinois.edu/academics/courses/stat425",
+    },
+    {
+      name: "Discrete Structures",
+      number: "CS 173",
+      url: "https://cs.illinois.edu/academics/courses/cs173",
+    },
+    {
+      name: "Data Science Discovery",
+      number: "CS 107",
+      url: "https://cs.illinois.edu/academics/courses/cs107",
+    },
+    {
+      name: "Computer Systems",
+      number: "CS 340",
+      url: "https://cs.illinois.edu/academics/courses/cs340",
+    },
+    {
+      name: "Software Design Lab",
+      number: "CS 222",
+      url: "https://cs.illinois.edu/academics/courses/cs222",
+    },
+    {
+      name: "Programming Methodologies in C++",
+      number: "CS 128",
+      url: "https://cs.illinois.edu/academics/courses/cs128",
+    },
   ];
-  
 
   const projects = [
     {
@@ -271,44 +310,80 @@ function App() {
         </a>
       </div>
       <header className="App-header">
-        <img src={profilePicture} alt="Profile" className="profile-picture" />
-        <h1>
-          <ReactTyped
-            strings={[
-              "Welcome to my portfolio website :)",
-              "It's great to have you here!",
-            ]}
-            typeSpeed={100}
-            loop
-            backSpeed={50}
-            cursorChar="|"
-            showCursor={true}
-          />
-        </h1>
-        <div className="flashcard-container">
-          {cards.map((card, index) => (
-            <div
-              key={index}
-              className={`flashcard ${index === currentCard ? "active" : ""}`}
-            >
-              <div className="flashcard-content">
-                <p>{card.content}</p>
-              </div>
-              <div className="button-container">
-                <a href={resume} download className="download-btn">
-                  Download My Resume
-                </a>
-              </div>
+        <div className="intro">
+          <div className="left-text">
+            <div class="profile-container">
+              <img
+                src={profilePicture}
+                alt="Profile"
+                className="profile-picture"
+              />
+              <h1 style={{ textAlign: "center" }}>
+                <ReactTyped
+                  strings={[
+                    "Welcome to my portfolio website :)",
+                    "It's great to have you here!",
+                  ]}
+                  typeSpeed={100}
+                  loop
+                  backSpeed={50}
+                  cursorChar="|"
+                  showCursor={true}
+                />
+              </h1>
             </div>
-          ))}
-          {/* Previous and next buttons */}
-          <button className="prev-btn" onClick={prevCard}>
-            <span>&#8249;</span> {/* Left arrow */}
-          </button>
-          <button className="next-btn" onClick={nextCard}>
-            <span>&#8250;</span> {/* Right arrow */}
-          </button>
+            <h2>
+              Hi, I'm Sneha! I am a Statistics and Computer Science Major at the University of Illinois at
+              Urbana-Champaign, graduating in May 2026. I am currently working
+              with Dr. Tal August at the Language Interaction Lab, using natural
+              language processing to analyze and quantify certainty levels in
+              academic citations. This research aims to enable comparative
+              confidence analysis across different research domains.
+            </h2>
+            <div className="button-container">
+              <a href={resume} download className="download-btn">
+                Resume
+              </a>
+              <a
+                href="https://github.com/snehasund"
+                className="download-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+              <a
+                href="https://linkedin.com/in/ssundar11"
+                className="download-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a href="mailto:snehamsundar@gmail.com" className="download-btn">
+                Email
+              </a>
+            </div>
+          </div>
+          <div className="graph-node-container">
+            <div className="node" data-node="NLP">
+              Natural Language Processing
+            </div>
+            <div className="node" data-node="AI">
+              Artificial Intelligence
+            </div>
+            <div className="node" data-node="Data Science">
+              Human-Centered Computing
+            </div>
+            <div className="node" data-node="Machine Learning">
+              Machine Learning
+            </div>
+            <div className="node" data-node="Research">
+              Big Data Analytics
+            </div>
+          </div>
         </div>
+
       </header>
 
       {/* projects section */}
@@ -367,63 +442,62 @@ function App() {
       {/* Tech Stack Section */}
       <section className="section">
         <h2>some of my most-used tech!</h2>
-      <div class="boxes">
-        {/* Languages Card */}
-        <div className="tech-card">
-          <h3>Programming Languages</h3>
-          <div className="tech-stack languages">
-            {techStack
-              .filter((tech) => tech.type === "language") // Adjust the type filter as needed ("language", "framework", etc.)
-              .map((tech, index) => (
-                <div key={index} className="tech-item">
-                  <a
-                    href={tech.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "green"}}
-                  >
-                    <div style={{ textAlign: "center" }}>
-                      {React.cloneElement(tech.icon, {
-                        size: 32,
-                        color: "#011f14",
-                      })}
-                    </div>
-                    <div style={{ textAlign: "center" }}>{tech.name}</div>
-                  </a>
-                </div>
-              ))}
+        <div class="boxes">
+          {/* Languages Card */}
+          <div className="tech-card">
+            <h3>Programming Languages</h3>
+            <div className="tech-stack languages">
+              {techStack
+                .filter((tech) => tech.type === "language") // Adjust the type filter as needed ("language", "framework", etc.)
+                .map((tech, index) => (
+                  <div key={index} className="tech-item">
+                    <a
+                      href={tech.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "green" }}
+                    >
+                      <div style={{ textAlign: "center" }}>
+                        {React.cloneElement(tech.icon, {
+                          size: 32,
+                          color: "#011f14",
+                        })}
+                      </div>
+                      <div style={{ textAlign: "center" }}>{tech.name}</div>
+                    </a>
+                  </div>
+                ))}
+            </div>
           </div>
-        </div>
 
-        {/* Frameworks and Technologies Card */}
-        <div className="tech-card">
-          <h3>Frameworks/Technologies</h3>
-          <div className="tech-stack frameworks">
-            {techStack
-              .filter((tech) => tech.type !== "language") // Adjust the type filter as needed ("language", "framework", etc.)
-              .map((tech, index) => (
-                <div key={index} className="tech-item">
-                  <a
-                    href={tech.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "green" }}
-                  >
-                    <div style={{ textAlign: "center" }}>
-                      {React.cloneElement(tech.icon, {
-                        size: 32,
-                        color: "#011f14",
-                      })}
-                    </div>
-                    <div style={{ textAlign: "center" }}>{tech.name}</div>
-                  </a>
-                </div>
-              ))}
-          </div>
+          {/* Frameworks and Technologies Card */}
+          <div className="tech-card">
+            <h3>Frameworks/Technologies</h3>
+            <div className="tech-stack frameworks">
+              {techStack
+                .filter((tech) => tech.type !== "language") // Adjust the type filter as needed ("language", "framework", etc.)
+                .map((tech, index) => (
+                  <div key={index} className="tech-item">
+                    <a
+                      href={tech.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ color: "green" }}
+                    >
+                      <div style={{ textAlign: "center" }}>
+                        {React.cloneElement(tech.icon, {
+                          size: 32,
+                          color: "#011f14",
+                        })}
+                      </div>
+                      <div style={{ textAlign: "center" }}>{tech.name}</div>
+                    </a>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
       </section>
-
 
       {/* coursework section */}
       <section className="section">
