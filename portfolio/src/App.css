@@ -11,14 +11,14 @@
 /* navbar */
 .navbar {
   display: flex;
-  justify-content: space-between; /* Space between the name and icons */
-  align-items: center; /* Vertically align items */
+  justify-content: space-between; 
+  align-items: center; 
   background-color: rgb(2, 29, 2);
   padding: 10px;
 }
 
 .nav-name {
-  color: whitesmoke; /* Style the name */
+  color: whitesmoke;
   font-weight: bold;
   font-size: 35px;
   font-style: italic;
@@ -26,8 +26,8 @@
 }
 
 .nav-icons {
-  display: flex; /* Ensure icons are displayed in a row */
-  gap: 15px; /* Add space between icons */
+  display: flex; 
+  gap: 15px; 
 }
 
 .navbar a {
@@ -150,8 +150,8 @@
   top: 50%;
   width: 100%;
   height: 2px;
-  background-color: transparent; /* Remove the line through text */
-  transform: translateY(-50%); /* Center the line vertically */
+  background-color: transparent; 
+  transform: translateY(-50%); 
 }
 
 
@@ -196,17 +196,17 @@ h5 {
   border: none;
   outline: none;
   border-radius: 20px;
-  text-decoration: none; /* Remove default underline */
-  width: fit-content; /* Adjust button width as needed */
-  margin: 0 auto; /* Center the button horizontally */
+  text-decoration: none; 
+  width: fit-content;
+  margin: 0 auto; 
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
 
-/* Hover effect */
+/* hover effect */
 .download-btn:hover {
-  background-color: #6c1212; /* Lighter shade of green */
-  transform: translateY(-5px); /* Moves the button up slightly */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Creates the pop effect with a shadow */
+  background-color: #6c1212; 
+  transform: translateY(-5px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .prev-btn,
@@ -249,8 +249,8 @@ h1 {
 
 .section {
   display: block;
-  justify-content: space-around; /* Space evenly between cards */
-  margin-bottom: 30px; /* Add some bottom margin */
+  justify-content: space-around; 
+  margin-bottom: 30px; 
 }
 
 .boxes {
@@ -270,8 +270,8 @@ h1 {
 }
 
 .tech-card:hover {
-  transform: translateY(-5px); /* Move card up on hover */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Larger box shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .tech-stack {
@@ -284,7 +284,7 @@ h1 {
 }
 
 .tech-item {
-  flex-basis: calc(100% / 7); /* Adjust based on the number of items per row */
+  flex-basis: calc(100% / 7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -350,13 +350,12 @@ h1 {
 }
 
 .course-card a {
-  /* Center the text horizontally and vertically */
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; /* Ensure the text takes full height */
-  margin: 0; /* Remove default margins */
+  height: 100%; 
+  margin: 0; 
   color: rgb(1, 43, 1);
 }
 
@@ -380,7 +379,7 @@ h1 {
   display: block;
 }
 
-/* projects Section */
+/* projects section */
 
 .project-card-container {
   display: flex;
@@ -401,12 +400,12 @@ h1 {
 }
 
 .project-card:hover {
-  transform: translateY(-5px); /* move card up on hover */
+  transform: translateY(-5px); 
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
 }
 
 .project-image {
-  width: 100%; /* image takes full width */
+  width: 100%; 
   height: auto; /* not distorted image */
 }
 

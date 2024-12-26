@@ -479,7 +479,7 @@ function App() {
             <h3>Frameworks/Technologies</h3>
             <div className="tech-stack frameworks">
               {techStack
-                .filter((tech) => tech.type !== "language") // Adjust the type filter as needed ("language", "framework", etc.)
+                .filter((tech) => tech.type !== "language") 
                 .map((tech, index) => (
                   <div key={index} className="tech-item">
                     <a
