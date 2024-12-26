@@ -50,15 +50,15 @@ function App() {
   const cards = [
     {
       content:
-        "I'm a student at the University of Illinois Urbana-Champaign pursuing a Bachelor of Science in Statistics & Computer Science.",
+       "I'm pursuing a Bachelor of Science in Statistics & Computer Science at the University of Illinois Urbana-Champaign."
     },
     {
       content:
-        "I'm currently working as a SWE intern at Arrcus on their Customer Solutions Engineering Team.",
+        "I'm currently working with Dr. Tal August at the Language Interaction Lab at UIUC, using natural language processing to analyze and quantify certainty levels in academic citations!",
     },
     {
       content:
-        "I'm constantly working on new projects and playing around with new tech so be sure to check back soon for some new updates.",
+        "Last summer, I was a SWE intern at Arrcus on their Customer Solutions Engineering Team.",
     },
     // Add more cards as needed
   ];
@@ -313,7 +313,7 @@ function App() {
 
       {/* projects section */}
       <section className="section">
-        <h2>Current Projects</h2>
+        <h2>my favorite projects</h2>
         <div className="project-card-container">
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
@@ -344,7 +344,7 @@ function App() {
           {/* New card for past projects */}
           <div className="project-card">
             <div className="card-content">
-              <h3>Past Projects</h3>
+              <h3>even more projects</h3>
               <ul>
                 {pastProjects.map((project, index) => (
                   <li key={index}>
@@ -427,7 +427,7 @@ function App() {
 
       {/* coursework section */}
       <section className="section">
-        <h2>Relevant Coursework</h2>
+        <h2>relevant classes</h2>
         <div className="coursework-container">
           {coursework.map((course, index) => (
             <div
