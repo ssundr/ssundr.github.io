@@ -11,8 +11,23 @@
 /* navbar */
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Space between the name and icons */
+  align-items: center; /* Vertically align items */
   background-color: rgb(2, 29, 2);
+  padding: 10px;
+}
+
+.nav-name {
+  color: whitesmoke; /* Style the name */
+  font-weight: bold;
+  font-size: 35px;
+  font-style: italic;
+  padding-left: 15px;
+}
+
+.nav-icons {
+  display: flex; /* Ensure icons are displayed in a row */
+  gap: 15px; /* Add space between icons */
 }
 
 .navbar a {
@@ -185,6 +200,14 @@ h5 {
   text-decoration: none; /* Remove default underline */
   width: fit-content; /* Adjust button width as needed */
   margin: 0 auto; /* Center the button horizontally */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.download-btn:hover {
+  background-color: #6c1212; /* Lighter shade of green */
+  transform: translateY(-5px); /* Moves the button up slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Creates the pop effect with a shadow */
 }
 
 .prev-btn,

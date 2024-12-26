@@ -291,6 +291,8 @@ function App() {
   return (
     <div className="App">
       <div className="navbar">
+        <div className="nav-name">Sneha Sundar</div>
+        <div class="nav-icons">
         <a
           href="https://www.linkedin.com/in/sneha-sundar26"
           target="_blank"
@@ -308,7 +310,9 @@ function App() {
         >
           <i className="fab fa-github white-icon larger-icon"></i>
         </a>
+        </div>
       </div>
+
       <header className="App-header">
         <div className="intro">
           <div className="left-text">
@@ -333,12 +337,13 @@ function App() {
               </h1>
             </div>
             <h2>
-              Hi, I'm Sneha! I am a Statistics and Computer Science Major at the University of Illinois at
-              Urbana-Champaign, graduating in May 2026. I am currently working
-              with Dr. Tal August at the Language Interaction Lab, using natural
-              language processing to analyze and quantify certainty levels in
-              academic citations. This research aims to enable comparative
-              confidence analysis across different research domains.
+              Hi, I'm Sneha! I am a Statistics and Computer Science Major at the
+              University of Illinois at Urbana-Champaign, graduating in May
+              2026. I am currently working with Dr. Tal August at the Language
+              Interaction Lab, using natural language processing to analyze and
+              quantify certainty levels in academic citations. This research
+              aims to enable comparative confidence analysis across different
+              research domains.
             </h2>
             <div className="button-container">
               <a href={resume} download className="download-btn">
@@ -383,7 +388,6 @@ function App() {
             </div>
           </div>
         </div>
-
       </header>
 
       {/* projects section */}
