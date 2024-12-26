@@ -4,13 +4,11 @@ import { ReactTyped } from "react-typed";
 import {
   SiDjango,
   SiTensorflow,
-  SiPycharm,
   SiFlask,
   SiPandas,
   SiKeras,
   SiTypescript,
   SiNumpy,
-  SiOpencv,
 } from "react-icons/si";
 import { CgCPlusPlus } from "react-icons/cg";
 
@@ -25,14 +23,12 @@ import {
   FaReact,
   FaCode,
   FaGitAlt,
-  FaCuttlefish,
-  FaDiceD20,
 } from "react-icons/fa";
 
-import "./App.css"; // Import your CSS file for styling
+import "./App.css"; 
 
 // prof pic
-import profilePicture from "./images/profile-picture.jpeg"; // Import your profile picture
+import profilePicture from "./images/profile-picture.jpeg"; 
 
 // project images
 import restaurantReccomender from "./images/restaurant-recommender.png";
@@ -42,8 +38,6 @@ import generatedFaces from "./images/generated-faces.png";
 
 // resume
 import resume from "./files/sneha_sundar_cv.pdf";
-
-// add download button for research paper here
 
 function App() {
   const [currentCard, setCurrentCard] = useState(0);
