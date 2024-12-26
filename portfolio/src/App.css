@@ -71,14 +71,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: relative; /* Allow for positioning lines between nodes */
+  position: relative;
   margin-top: 20px;
-  margin-bottom: 20px;
+  gap: 2px;
 }
 
 .node {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background-color: #011f14;
   margin: 10px;
@@ -89,7 +89,7 @@
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  position: relative; /* For positioning the line */
+  position: relative; 
   cursor: pointer;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
@@ -122,15 +122,14 @@
 .node:not(:last-child)::after {
   content: '';
   position: absolute;
-  top: 100%; /* Position the line below the node */
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%); /* Center the line horizontally */
-  width: 2px; /* Width of the line */
-  height: 40px; /* Length of the line (adjust as needed) */
-  background-color: #011f14; /* Color of the line */
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100px;
+  background-color: #011f14; 
 }
 
-/* Remove any line through the last node */
 .node:last-child::after {
   content: none;
 }
@@ -141,7 +140,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
 }
 
 .graph-node-container::before {
