@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/static/css/main.e8ba7d7d.css",
-    "main.js": "/static/js/main.9fc2722a.js",
+    "main.js": "/static/js/main.3464e229.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
     "static/media/profile-picture.jpeg": "/static/media/profile-picture.1252874eba4f64020b63.jpeg",
-    "static/media/sneha_sundar_cv.pdf": "/static/media/sneha_sundar_cv.45db5e74adb04a9ccbbf.pdf",
+    "static/media/sneha_sundar_cv.pdf": "/static/media/sneha_sundar_cv.76cd6b406f011f58d48a.pdf",
     "static/media/restaurant-recommender.png": "/static/media/restaurant-recommender.3203e80b25185cd86071.png",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
     "index.html": "/index.html",
     "main.e8ba7d7d.css.map": "/static/css/main.e8ba7d7d.css.map",
-    "main.9fc2722a.js.map": "/static/js/main.9fc2722a.js.map",
+    "main.3464e229.js.map": "/static/js/main.3464e229.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8ba7d7d.css",
-    "static/js/main.9fc2722a.js"
+    "static/js/main.3464e229.js"
   ]
 }
