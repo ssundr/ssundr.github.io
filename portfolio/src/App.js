@@ -54,7 +54,6 @@ function App() {
       content:
         "Last summer, I was a SWE intern at Arrcus on their Customer Solutions Engineering Team.",
     },
-    // Add more cards as needed
   ];
 
   const techStack = [
