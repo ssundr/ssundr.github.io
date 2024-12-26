@@ -25,10 +25,10 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 
-import "./App.css"; 
+import "./App.css";
 
 // prof pic
-import profilePicture from "./images/profile-picture.jpeg"; 
+import profilePicture from "./images/profile-picture.jpeg";
 
 // project images
 import restaurantReccomender from "./images/restaurant-recommender.png";
@@ -286,23 +286,23 @@ function App() {
       <div className="navbar">
         <div className="nav-name">Sneha Sundar</div>
         <div class="nav-icons">
-        <a
-          href="https://www.linkedin.com/in/sneha-sundar26"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-linkedin white-icon larger-icon"></i>
-        </a>
-        <a href="mailto:snehas9@illinois.edu">
-          <i className="far fa-envelope white-icon larger-icon"></i>
-        </a>
-        <a
-          href="https://github.com/snehasund"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fab fa-github white-icon larger-icon"></i>
-        </a>
+          <a
+            href="https://www.linkedin.com/in/sneha-sundar26"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-linkedin white-icon larger-icon"></i>
+          </a>
+          <a href="mailto:snehas9@illinois.edu">
+            <i className="far fa-envelope white-icon larger-icon"></i>
+          </a>
+          <a
+            href="https://github.com/snehasund"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fab fa-github white-icon larger-icon"></i>
+          </a>
         </div>
       </div>
 
@@ -332,12 +332,16 @@ function App() {
             <h2>
               Hi, I'm Sneha! I am a Statistics and Computer Science Major at the
               University of Illinois at Urbana-Champaign, graduating in May
-              2026. I am currently working with Dr. Tal August at the Language
-              Interaction Lab, using natural language processing to analyze and
-              quantify certainty levels in academic citations. This research
-              aims to enable comparative confidence analysis across different
-              research domains.
+              2026. I am currently working with{" "}
+              <a style={{color: 'darkgreen'}} href="https://talaugust.github.io/" target="_blank">
+                Dr. Tal August
+              </a>{" "}
+              at the Language Interaction Lab, using natural language processing
+              to analyze and quantify certainty levels in academic citations.
+              This research aims to enable comparative confidence analysis
+              across different research domains.
             </h2>
+
             <div className="button-container">
               <a href={resume} download className="download-btn">
                 Resume
@@ -472,7 +476,7 @@ function App() {
             <h3>Frameworks/Technologies</h3>
             <div className="tech-stack frameworks">
               {techStack
-                .filter((tech) => tech.type !== "language") 
+                .filter((tech) => tech.type !== "language")
                 .map((tech, index) => (
                   <div key={index} className="tech-item">
                     <a
