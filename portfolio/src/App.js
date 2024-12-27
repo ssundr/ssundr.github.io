@@ -9,6 +9,7 @@ import {
   SiKeras,
   SiTypescript,
   SiNumpy,
+  SiMysql
 } from "react-icons/si";
 import { CgCPlusPlus } from "react-icons/cg";
 
@@ -117,6 +118,13 @@ function App() {
       icon: <CgCPlusPlus />,
       url: "https://en.cppreference.com/w/cpp",
     },
+    {
+      name: "SQL",
+      type: "language",
+      icon: <SiMysql />,
+      url: "https://learn.microsoft.com/en-us/sql/?view=sql-server-ver16",
+    },
+    
     {
       name: "React",
       type: "framework",
