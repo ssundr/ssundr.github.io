@@ -502,7 +502,7 @@ function App() {
 
       {/* coursework section */}
       <section className="section">
-        <h2>Relevant Classes</h2>
+        <h2>Relevant Coursework</h2>
         <div className="coursework-container">
           {coursework.map((course, index) => (
             <div
