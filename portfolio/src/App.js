@@ -450,7 +450,7 @@ function App() {
 
       {/* Tech Stack Section */}
       <section className="section">
-        <h2>Some of my Most-Used Tech!</h2>
+        <h2>My Most-Used Tech!</h2>
         <div class="boxes">
           {/* Languages Card */}
           <div className="tech-card">
