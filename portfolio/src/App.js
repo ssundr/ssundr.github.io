@@ -389,7 +389,7 @@ function App() {
 
       {/* projects section */}
       <section className="section">
-        <h2>my favorite projects</h2>
+        <h2>My Favorite Projects</h2>
         <div className="project-card-container">
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
@@ -442,7 +442,7 @@ function App() {
 
       {/* Tech Stack Section */}
       <section className="section">
-        <h2>some of my most-used tech!</h2>
+        <h2>Some of my Most-Used Tech!</h2>
         <div class="boxes">
           {/* Languages Card */}
           <div className="tech-card">
@@ -502,7 +502,7 @@ function App() {
 
       {/* coursework section */}
       <section className="section">
-        <h2>relevant classes</h2>
+        <h2>Relevant Classes</h2>
         <div className="coursework-container">
           {coursework.map((course, index) => (
             <div
