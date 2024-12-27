@@ -218,6 +218,14 @@ function App() {
       number: "CS 128",
       url: "https://cs.illinois.edu/academics/courses/cs128",
     },
+    {
+      name: 'Algorithms & Models of Computation',
+      number: "CS 374"
+    },
+    {
+      name: "Computational Social Science",
+      number: "CS 498"
+    }
   ];
 
   const projects = [
