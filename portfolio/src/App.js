@@ -428,7 +428,7 @@ function App() {
           {/* New card for past projects */}
           <div className="project-card">
             <div className="card-content">
-              <h3>even more projects</h3>
+              <h3>More Projects</h3>
               <ul>
                 {pastProjects.map((project, index) => (
                   <li key={index}>
