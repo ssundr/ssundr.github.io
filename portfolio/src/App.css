@@ -72,7 +72,7 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  margin-top: 20px;
+  margin-top: -47px;
   gap: 2px;
 }
 
@@ -233,8 +233,8 @@ h5 {
 
 /* profile picture */
 .profile-picture {
-  margin-top: 3%;
   width: 60%;
+  margin-top: -13%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(8, 53, 8, 0.5), 0 0 20px rgba(0, 69, 0, 0.3);
