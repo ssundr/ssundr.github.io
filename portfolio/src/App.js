@@ -182,11 +182,6 @@ function App() {
       url: "https://cs.illinois.edu/academics/courses/cs225",
     },
     {
-      name: "Artificial Intelligence",
-      number: "CS 440",
-      url: "https://cs.illinois.edu/academics/courses/cs440",
-    },
-    {
       name: "Database Systems",
       number: "CS 411",
       url: "https://cs.illinois.edu/academics/courses/cs411",
