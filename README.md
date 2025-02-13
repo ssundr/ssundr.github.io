@@ -1,4 +1,4 @@
-# portfolio website
+# snehasund.github.io
 
 <p>You have found my portfolio website! This site was built using <strong>React.js</strong>.</p>
 
