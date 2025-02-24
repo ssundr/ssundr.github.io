@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(#d4e3da, rgb(255, 255, 255));
+  background-image: linear-gradient(#e8e9ef, rgb(255, 255, 255));
 }
 
 .App-logo {
@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between; 
   align-items: center; 
-  background-color: rgb(2, 29, 2);
+  background-color: rgb(2, 10, 29);
   padding: 10px;
 }
 
@@ -80,7 +80,7 @@
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background-color: #011f14;
+  background-color: #01011f;
   margin: 10px;
   display: flex;
   align-items: center;
@@ -127,7 +127,7 @@
   transform: translateX(-50%);
   width: 2px;
   height: 100px;
-  background-color: #011f14; 
+  background-color: rgb(2, 10, 29);
 }
 
 .node:last-child::after {
@@ -190,7 +190,7 @@ h5 {
   padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #013a01;
+  background-color: #07013a;
   color: #fff;
   border: none;
   outline: none;

@@ -344,7 +344,7 @@ function App() {
               Hi, I'm Sneha! I am a Statistics and Computer Science Major at the
               University of Illinois at Urbana-Champaign, graduating in May
               2026. I am currently working with{" "}
-              <a style={{color: 'darkgreen'}} href="https://talaugust.github.io/" target="_blank">
+              <a style={{color: 'darkblue'}} href="https://talaugust.github.io/" target="_blank">
                 Dr. Tal August
               </a>{" "}
               at the Language Interaction Lab, using natural language processing
@@ -410,7 +410,7 @@ function App() {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: "darkgreen" }}
+                    style={{ color: "darkblue" }}
                   >
                     {project.title}
                   </a>
@@ -439,7 +439,7 @@ function App() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      style={{ color: "darkgreen" }}
+                      style={{ color: "darkblue" }}
                     >
                       {project.name}
                     </a>
