@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: linear-gradient(#ecf2ee, rgb(255, 255, 255));
+  background-image: linear-gradient(#f5f7f6, #ffffff);
 }
 
 .App-logo {
@@ -11,29 +11,53 @@
 /* navbar */
 .navbar {
   display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  background-color: rgb(2, 29, 2);
-  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-name {
-  color: whitesmoke;
-  font-weight: bold;
-  font-size: 35px;
-  font-style: italic;
-  padding-left: 15px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #333;
+  user-select: none;
 }
 
-.nav-icons {
-  display: flex; 
-  gap: 15px; 
+.nav-links a {
+  color: #555;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
 }
 
-.navbar a {
-  color: whitesmoke;
-  padding: 10px;
+.nav-links a:hover {
+  color: #1e90ff; 
+  text-decoration: underline;
+  cursor: pointer;
 }
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nav-links {
+    margin-top: 8px;
+    display: flex;
+    gap: 16px;
+  }
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -80,12 +104,12 @@
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  background-color: #011f14;
+  background-color: #7aa796;
   margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -154,12 +178,28 @@
   transform: translateY(-50%); 
 }
 
+.tech-icons {
+  display: flex;
+  gap: 0.5em; 
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-icon {
+  display: inline-flex; 
+}
 
 .button-container {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+    border: 1px solid #ccc;
+    padding: 6px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .intro h2 {
@@ -190,20 +230,19 @@ h5 {
   padding: 15px 20px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #013a01;
-  color: #fff;
+  color: black;
   border: none;
   outline: none;
   border-radius: 20px;
   text-decoration: none; 
   width: fit-content;
   margin: 0 auto; 
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* hover effect */
 .download-btn:hover {
-  background-color: #6c1212; 
+  background-color: #298f59; 
   transform: translateY(-5px); 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -389,31 +428,38 @@ h1 {
 .project-card {
   background-color: #fafefb;
   border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding: 22px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+  margin: 8px;
+  padding: 12px 14px;
   width: 250px;
-  transition: transform 0.3s ease;
+  height: auto;               
+  font-size: 0.85rem;         
+  line-height: 1.2;  
+  transition: transform 0.2s ease;
   position: relative;
-  overflow: hidden; /* image doesn't overflow the card */
+  overflow: hidden;
 }
 
 .project-card:hover {
   transform: translateY(-5px); 
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* larger box shadow on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .project-image {
   width: 100%; 
-  height: auto; /* not distorted image */
+  height: auto;
 }
 
 /* footer */
 .black-icon {
-  color: black; /* icon color*/
-  padding: 10px 10px; /* padding between icons */
+  color: black;
+  padding: 10px 10px;
 }
 
 .larger-icon {
-  font-size: 35px; /* footer icon size */
+  font-size: 35px;
+}
+
+.social-icons a:not(:last-child) {
+  margin-right: 7px; 
 }
