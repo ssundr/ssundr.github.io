@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.51041ab9.css",
-    "main.js": "/static/js/main.742e3205.js",
+    "main.css": "/static/css/main.bf0e1ac6.css",
+    "main.js": "/static/js/main.d8445204.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
+    "static/media/profile-picture.png": "/static/media/profile-picture.acd2126932fe54c6ec7d.png",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
-    "static/media/profile-picture.jpeg": "/static/media/profile-picture.1252874eba4f64020b63.jpeg",
     "static/media/sneha_sundar_cv.pdf": "/static/media/sneha_sundar_cv.76cd6b406f011f58d48a.pdf",
-    "static/media/restaurant-recommender.png": "/static/media/restaurant-recommender.3203e80b25185cd86071.png",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
+    "static/media/restaurant-recommender.png": "/static/media/restaurant-recommender.6b9f5a6f6757374bc29b.png",
     "index.html": "/index.html",
-    "main.51041ab9.css.map": "/static/css/main.51041ab9.css.map",
-    "main.742e3205.js.map": "/static/js/main.742e3205.js.map",
+    "main.bf0e1ac6.css.map": "/static/css/main.bf0e1ac6.css.map",
+    "main.d8445204.js.map": "/static/js/main.d8445204.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51041ab9.css",
-    "static/js/main.742e3205.js"
+    "static/css/main.bf0e1ac6.css",
+    "static/js/main.d8445204.js"
   ]
 }
