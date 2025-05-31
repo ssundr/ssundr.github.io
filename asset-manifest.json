@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf0e1ac6.css",
-    "main.js": "/static/js/main.d8445204.js",
+    "main.css": "/static/css/main.d89970aa.css",
+    "main.js": "/static/js/main.d630240a.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/profile-picture.png": "/static/media/profile-picture.acd2126932fe54c6ec7d.png",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
     "static/media/world-happiness-visualization.png": "/static/media/world-happiness-visualization.6a5a8fc8aead87cdf578.png",
     "static/media/sneha_sundar_cv.pdf": "/static/media/sneha_sundar_cv.76cd6b406f011f58d48a.pdf",
     "static/media/summarizer.png": "/static/media/summarizer.288353dc57458ee76305.png",
+    "static/media/arrcus_logo.png": "/static/media/arrcus_logo.97cf9dd5a771db135eee.png",
     "static/media/restaurant-recommender.png": "/static/media/restaurant-recommender.6b9f5a6f6757374bc29b.png",
+    "static/media/uhouston.png": "/static/media/uhouston.4adf4cacf6ffeee13c2c.png",
+    "static/media/lab_logo.png": "/static/media/lab_logo.168cc18683175506f90c.png",
     "index.html": "/index.html",
-    "main.bf0e1ac6.css.map": "/static/css/main.bf0e1ac6.css.map",
-    "main.d8445204.js.map": "/static/js/main.d8445204.js.map",
+    "main.d89970aa.css.map": "/static/css/main.d89970aa.css.map",
+    "main.d630240a.js.map": "/static/js/main.d630240a.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf0e1ac6.css",
-    "static/js/main.d8445204.js"
+    "static/css/main.d89970aa.css",
+    "static/js/main.d630240a.js"
   ]
 }
