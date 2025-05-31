@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+
 import { ReactTyped } from "react-typed";
 import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
 import { DiGoogleCloudPlatform } from "react-icons/di";
@@ -34,6 +35,7 @@ import {
 
 
 import "./App.css";
+import AnimatedArrow from './AnimatedArrow';
 
 // prof pic
 import profilePicture from "./images/profile-picture.png";
@@ -55,6 +57,7 @@ import houston from "./images/uhouston.png"
 
 function App() {
   
+    
   const techStack = [
     {
       name: "JavaScript",
@@ -497,7 +500,7 @@ function App() {
               <h1 style={{ textAlign: "center" }}>
                 <ReactTyped
                   strings={[
-                    "Welcome to my portfolio website :)",
+                    "Hi! I'm Sneha :)",
                     "It's great to have you here!",
                   ]}
                   typeSpeed={100}
@@ -508,16 +511,18 @@ function App() {
                 />
               </h1>
             </div>
-            <h2>
-              Hi, I'm Sneha! I am a Statistics and Computer Science Major at the  
-              University of Illinois at Urbana-Champaign. I am currently working on an  
-              NSF-funded project in data-centric privacy at the University of Houston with{' '}
+            <div className="target-text" style={{marginBottom: 10}}>some of my research interests!</div>
+            <h7 className="bio" style={{marginBottom: 15}}>currently, i am...</h7>
+            <div className="bioBullets">
+            <li>studying computer science and statistics at the  
+              University of Illinois at Urbana-Champaign</li>
+             <li>working on an  
+               NSF-funded project in data-centric privacy at the University of Houston with{' '}
               <a style={{color: "darkgreen", fontWeight: "bold"}} href="https://www.ece.uh.edu/faculty/leiss" target="_blank" rel="noopener noreferrer">
-                 Dr. Ernst Leiss
-              </a>.
-            </h2>
-
-
+                 Dr. Ernst Leiss.
+              </a>
+            </li>
+            </div>
             <div className="button-container">
               <a href={resume} download className="download-btn">
           <img

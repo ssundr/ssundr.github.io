@@ -229,6 +229,12 @@ h5 {
   color: #61dafb;
 }
 
+.bioBullets li {
+  font-size: 25px;
+  font-weight: bold;
+
+}
+
 .download-btn {
   display: block;
   padding: 15px 20px;
@@ -243,6 +249,30 @@ h5 {
   margin: 0 auto; 
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.bioBullets {
+  background-color: #7aa796;    
+  border-radius: 12px;           
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px 25px;            
+  max-width: 500px;                
+  margin: 20px auto;              
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;                
+}
+
+.bioBullets ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.bioBullets li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 
 /* hover effect */
 .download-btn:hover {
@@ -427,7 +457,6 @@ h1 {
   background-color: #fafefb;
 }
 
-
 .project-card-container {
   display: flex;
   flex-wrap: wrap;
@@ -508,4 +537,43 @@ h1 {
 
 .social-icons a:not(:last-child) {
   margin-right: 7px; 
+}
+
+/* AnimatedArrow.css */
+
+.container {
+  position: relative;
+  padding: 50px;
+  text-align: center;
+}
+
+.text-block {
+  margin-top: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow-path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  animation: drawArrow 1s ease forwards, fadeOut 0.5s ease 2.5s forwards;
+}
+
+@keyframes drawArrow {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
 }
