@@ -47,6 +47,12 @@ import generatedFaces from "./images/generated-faces.png";
 // resume
 import resume from "./files/sneha_sundar_cv.pdf";
 
+// company logos
+import arrcus from "./images/arrcus_logo.png";
+import siebel from "./images/siebelcds_logo.png"
+import lab_logo from "./images/lab_logo.png"
+import houston from "./images/uhouston.png"
+
 function App() {
   
   const techStack = [
@@ -221,6 +227,33 @@ function App() {
       number: "CS 498"
     }
   ]; 
+
+  const experiences = [
+    {
+      company: "Arrcus", 
+      logo: arrcus, 
+      role: "Software Engineer Intern",
+      time: "Summer 2024"
+    },
+    {
+      company: "University of Illinois",
+      logo: siebel, 
+      role: "Course Assistant (Data Science Discovery",
+      time: "Spring 2024 - Present"
+    },
+    {
+      company: "Language Interaction Lab",
+      logo: lab_logo, 
+      role: "Research Assistant",
+      time: "Fall 2024 - Present"
+    },
+    {
+      company: "University of Houston",
+      logo: houston, 
+      role: "Undergraduate Researcher",
+      time: "Summer 2025"
+    }
+  ];
 
   const projects = [
     {
@@ -535,8 +568,8 @@ function App() {
       </header>
 
       {/* projects section */}
-      <section className="section">
-        <h2>My Favorite Projects</h2>
+      <section id="projects" className="section">
+        <h2>Projects and Experience</h2>
         <div className="project-card-container">
           {projects.map((project, index) => (
             <div className="project-card" key={index}>
@@ -591,6 +624,27 @@ function App() {
             </div>
           </div>
         </div>
+
+        <div className="experiences-container">
+          {experiences.map((exp, index) => (
+            <div className="experience-card" key={index}>
+              <img
+                src={exp.logo}
+                alt={`${exp.company} logo`}
+                className={
+                  index === 0 || index === 2
+                    ? "experience-logo large-logo"
+                    : "experience-logo"
+                }
+              />
+              <h3>{exp.company}</h3>
+              <p>{exp.role}</p>
+              <i><p>{exp.time}</p></i>
+            </div>
+          ))}
+        </div>
+
+
       </section>
 
       {/* tech stack */}
