@@ -196,7 +196,6 @@ html {
 .button-container {
     border: 1px solid #ccc;
     padding: 6px;
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -251,14 +250,15 @@ h5 {
 }
 
 .bioBullets {
-  background-color: #7aa796;    
+  background-color: rgba(122, 167, 150, 0.5);   
   border-radius: 12px;           
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 20px 25px;            
   max-width: 500px;                
   margin: 20px auto;              
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;                
+  color: #222; 
+  margin-top: -2px;               
 }
 
 .bioBullets ul {
@@ -294,14 +294,6 @@ h5 {
   border: none;
   outline: none;
   border-radius: 20px;
-}
-
-.prev-btn {
-  left: 5%;;
-}
-
-.next-btn {
-  right: 5%;
 }
 
 /* profile picture */

@@ -501,7 +501,7 @@ function App() {
                 <ReactTyped
                   strings={[
                     "Hi! I'm Sneha :)",
-                    "It's great to have you here!",
+                    "Welcome to my website!",
                   ]}
                   typeSpeed={100}
                   loop
@@ -511,7 +511,6 @@ function App() {
                 />
               </h1>
             </div>
-            <div className="target-text" style={{marginBottom: 10}}>some of my research interests!</div>
             <h7 className="bio" style={{marginBottom: 15}}>currently, i am...</h7>
             <div className="bioBullets">
             <li>studying computer science and statistics at the  
