@@ -445,10 +445,6 @@ h1 {
 
 /* projects section */
 
-#projects {
-  background-color: #fafefb;
-}
-
 .project-card-container {
   display: flex;
   flex-wrap: wrap;

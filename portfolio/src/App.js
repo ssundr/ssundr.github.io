@@ -35,8 +35,6 @@ import {
 
 
 import "./App.css";
-import AnimatedArrow from './AnimatedArrow';
-
 // prof pic
 import profilePicture from "./images/profile-picture.png";
 
