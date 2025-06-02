@@ -17,6 +17,7 @@ import {
   SiNumpy,
   SiMysql
 } from "react-icons/si";
+
 import { CgCPlusPlus } from "react-icons/cg";
 
 import {
@@ -486,7 +487,7 @@ function App() {
       </nav>
 
 
-      <header className="App-header">
+      <header className="App-header" id="about">
         <div className="intro">
           <div className="left-text">
             <div class="profile-container">
