@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d94a8112.css",
-    "main.js": "/static/js/main.678349eb.js",
+    "main.css": "/static/css/main.d26e4995.css",
+    "main.js": "/static/js/main.7204b1b2.js",
     "static/js/453.50152dcc.chunk.js": "/static/js/453.50152dcc.chunk.js",
     "static/media/profile-picture.png": "/static/media/profile-picture.acd2126932fe54c6ec7d.png",
     "static/media/generated-faces.png": "/static/media/generated-faces.1bdc74d3ecefc1b719d0.png",
@@ -13,12 +13,12 @@
     "static/media/uhouston.png": "/static/media/uhouston.4adf4cacf6ffeee13c2c.png",
     "static/media/lab_logo.png": "/static/media/lab_logo.168cc18683175506f90c.png",
     "index.html": "/index.html",
-    "main.d94a8112.css.map": "/static/css/main.d94a8112.css.map",
-    "main.678349eb.js.map": "/static/js/main.678349eb.js.map",
+    "main.d26e4995.css.map": "/static/css/main.d26e4995.css.map",
+    "main.7204b1b2.js.map": "/static/js/main.7204b1b2.js.map",
     "453.50152dcc.chunk.js.map": "/static/js/453.50152dcc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d94a8112.css",
-    "static/js/main.678349eb.js"
+    "static/css/main.d26e4995.css",
+    "static/js/main.7204b1b2.js"
   ]
 }
