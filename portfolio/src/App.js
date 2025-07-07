@@ -250,7 +250,7 @@ function App() {
       time: "Fall 2024 - Present"
     },
     {
-      company: "University of Houston",
+      company: "University of Houston \n (NSF REU)",
       logo: houston, 
       role: "Undergraduate Researcher",
       time: "Summer 2025"
