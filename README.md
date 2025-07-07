@@ -3,4 +3,4 @@
 
 *🖱️ Click through to learn more about my experiences and projects.*  
 
-*🧐 This site was built using React.js!*
+*🧐 This site was built from scatch without a template using React.js!*
