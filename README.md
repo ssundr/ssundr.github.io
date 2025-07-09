@@ -1,5 +1,5 @@
 # you have found my portfolio website :)
-## <a href="http://snehasund.github.io">snehasund.github.io</a>
+## <a href="http://ssundr.github.io">ssundr.github.io</a>
 
 *🖱️ Click through to learn more about my experiences and projects.*  
 
