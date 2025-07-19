@@ -46,7 +46,7 @@ import summarizer from "./images/summarizer.png";
 import generatedFaces from "./images/generated-faces.png";
 
 // resume
-import resume from "./files/SnehaSundar_FA25.pdf";
+import resume from "./files/SnehaSundar_Resume_fa25.pdf";
 
 // company logos
 import arrcus from "./images/arrcus_logo.png";
