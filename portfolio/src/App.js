@@ -459,11 +459,11 @@ function App() {
   const pastProjects = [
     {
       name: "Library Management System",
-      link: "https://github.com/snehasund/library-management-system",
+      link: "https://github.com/ssundr/library-management-system",
     },
     {
       name: "Heart Disease Risk Factors Analysis",
-      link: "https://github.com/snehasund/heart-disease-analysis",
+      link: "https://github.com/ssundr/heart-disease-analysis",
     },
     {
       name: "Evaluating the Effectiveness of a Symbolic Metamodel",
@@ -471,7 +471,7 @@ function App() {
     },
     {
       name: "Playlist Generator (built with the Spotify API)",
-      link: "https://github.com/snehasund/spotify-api-fun",
+      link: "https://github.com/ssundr/spotify-api-fun",
     },
   ];
 
@@ -530,7 +530,7 @@ function App() {
           />
         </a>
               <a
-                href="https://github.com/snehasund"
+                href="https://github.com/ssundr"
                 className="download-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -738,7 +738,7 @@ function App() {
       <FaEnvelope size={32} color="#D44638" />
     </a>
     <a
-      href="https://github.com/snehasund"
+      href="https://github.com/ssundr"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="GitHub"
