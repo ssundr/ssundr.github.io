@@ -300,7 +300,7 @@ function App() {
           <SiJupyter size={28} color="#F37626" />
         </a>,
       ],
-      link: "https://github.com/snehasund/generated-faces",
+      link: "https://github.com/ssundr/generated-faces",
       image: generatedFaces,
     },
     {
@@ -358,7 +358,7 @@ function App() {
           <DiGoogleCloudPlatform size={28} color="#4285F4" />
         </a>,
       ],
-      link: "https://github.com/snehasund/restaurant-recommender",
+      link: "https://github.com/ssundr/restaurant-recommender",
       image: restaurantReccomender,
     },
     {
@@ -396,7 +396,7 @@ function App() {
           <FaCss3Alt size={28} color="#1572B6" />
         </a>,
       ],
-      link: "https://github.com/snehasund/world-happiness-visualization",
+      link: "https://github.com/ssundr/world-happiness-visualization",
       image: worldHappinessVisualization,
     },
     {
@@ -450,7 +450,7 @@ function App() {
           <FaCss3Alt size={28} color="#1572B6" />
         </a>,
       ],
-      link: "https://github.com/snehasund/summarizer",
+      link: "https://github.com/ssundr/summarizer",
       image: summarizer,
     },
   ];
