@@ -46,7 +46,7 @@ import summarizer from "./images/summarizer.png";
 import generatedFaces from "./images/generated-faces.png";
 
 // resume
-import resume from "./files/SnehaSundar_Resume_fa25.pdf";
+import resume from "./files/SnehaSundar_resume.pdf";
 
 // company logos
 import arrcus from "./images/arrcus_logo.png";
@@ -512,12 +512,11 @@ function App() {
             </div>
             <h7 className="bio" style={{marginBottom: 15}}>currently, i am...</h7>
             <div className="bioBullets">
-            <li>studying computer science and statistics at the  
+            <li>a senior studying computer science and statistics at the  
               University of Illinois at Urbana-Champaign</li>
-             <li>working on an  
-               NSF-funded project in data-centric privacy at the University of Houston with{' '}
-              <a style={{color: "darkgreen", fontWeight: "bold"}} href="https://www.ece.uh.edu/faculty/leiss" target="_blank" rel="noopener noreferrer">
-                 Dr. Ernst Leiss.
+             <li>working on a NLP project studying academic language in citations with{' '}
+              <a style={{color: "darkgreen", fontWeight: "bold"}} href="https://talaugust.github.io/" target="_blank" rel="noopener noreferrer">
+                 Dr. Tal August
               </a>
             </li>
             </div>
