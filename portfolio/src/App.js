@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
 import { ReactTyped } from "react-typed";
-import { FaGithub, FaLinkedin, FaEnvelope} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { DiGoogleCloudPlatform } from "react-icons/di";
-import { SiPytorch, SiMongodb} from "react-icons/si";
+import { SiPytorch, SiMongodb } from "react-icons/si";
 import { SiJupyter } from "react-icons/si";
 
+import Dropdown from "react-bootstrap/Dropdown";
 
 import {
   SiDjango,
@@ -15,7 +16,7 @@ import {
   SiKeras,
   SiTypescript,
   SiNumpy,
-  SiMysql
+  SiMysql,
 } from "react-icons/si";
 
 import { CgCPlusPlus } from "react-icons/cg";
@@ -33,8 +34,6 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 
-
-
 import "./App.css";
 // prof pic
 import profilePicture from "./images/profile-picture.png";
@@ -50,13 +49,11 @@ import resume from "./files/SnehaSundar_resume.pdf";
 
 // company logos
 import arrcus from "./images/arrcus_logo.png";
-import siebel from "./images/siebelcds_logo.png"
-import lab_logo from "./images/lab_logo.png"
-import houston from "./images/uhouston.png"
+import siebel from "./images/siebelcds_logo.png";
+import lab_logo from "./images/lab_logo.png";
+import houston from "./images/uhouston.png";
 
 function App() {
-  
-    
   const techStack = [
     {
       name: "JavaScript",
@@ -173,7 +170,7 @@ function App() {
       url: "https://code.visualstudio.com/docs",
     },
   ];
-  
+
   const coursework = [
     {
       name: "Data Structures",
@@ -221,40 +218,40 @@ function App() {
       url: "https://cs.illinois.edu/academics/courses/cs128",
     },
     {
-      name: 'Algorithms & Models of Computation',
-      number: "CS 374"
+      name: "Algorithms & Models of Computation",
+      number: "CS 374",
     },
     {
       name: "Computational Social Science",
-      number: "CS 498"
-    }
-  ]; 
+      number: "CS 498",
+    },
+  ];
 
   const experiences = [
     {
-      company: "Arrcus", 
-      logo: arrcus, 
+      company: "Arrcus",
+      logo: arrcus,
       role: "Software Engineer Intern",
-      time: "Summer 2024"
+      time: "Summer 2024",
     },
     {
       company: "University of Illinois",
-      logo: siebel, 
+      logo: siebel,
       role: "Course Assistant (Data Science Discovery",
-      time: "Spring 2024 - Present"
+      time: "Spring 2024 - Present",
     },
     {
       company: "Language Interaction Lab",
-      logo: lab_logo, 
+      logo: lab_logo,
       role: "Research Assistant",
-      time: "Fall 2024 - Present"
+      time: "Fall 2024 - Present",
     },
     {
       company: "University of Houston \n (NSF REU)",
-      logo: houston, 
+      logo: houston,
       role: "Undergraduate Researcher",
-      time: "Summer 2025"
-    }
+      time: "Summer 2025",
+    },
   ];
 
   const projects = [
@@ -280,7 +277,7 @@ function App() {
           <img
             src="/matplotlib.png"
             alt="Matplotlib"
-            style={{ width: '2em', height: '2em' }}
+            style={{ width: "2em", height: "2em" }}
           />
         </a>,
         <a
@@ -307,7 +304,14 @@ function App() {
       title: "Restaurant Recommender",
       description:
         "Created a full-stack web application to help users simplify the decision of where to eat. This application was built with KMeans clustering to find the most highly regarded restaurants based on the user's cuisine preferences using the Geolocate API and Google Places API.",
-      techUsed: ["Python", "React", "Flask", "TypeScript", "MongoDB", "Google Cloud"],
+      techUsed: [
+        "Python",
+        "React",
+        "Flask",
+        "TypeScript",
+        "MongoDB",
+        "Google Cloud",
+      ],
       techUsedIcons: [
         <a
           key="python"
@@ -376,7 +380,7 @@ function App() {
           <img
             src="/rstudio.png"
             alt="RStudio"
-            style={{ width: '2em', height: '2em' }}
+            style={{ width: "2em", height: "2em" }}
           />
         </a>,
         <a
@@ -422,7 +426,7 @@ function App() {
           <img
             src="/nltk.png"
             alt="NLTK"
-            style={{ width: '2.6em', height: '2.6em' }}
+            style={{ width: "2.6em", height: "2.6em" }}
           />
         </a>,
         <a
@@ -454,7 +458,6 @@ function App() {
       image: summarizer,
     },
   ];
-  
 
   const pastProjects = [
     {
@@ -482,10 +485,20 @@ function App() {
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="mailto:snehas9@illinois.edu">Contact Me</a>
+          <a href="mailto:snehas9@illinois.edu">Contact Me</a>{" "}
+          {/* replace with drop down*/}
+          <Dropdown style={{display: flex}}>
+            <Dropdown.Toggle variant="success" id="dropdown-basic">
+              Contact Me
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="https://linkedin.com/in/ssundr">LinkedIn</Dropdown.Item>
+              <Dropdown.Item href="https://github.com/ssundr">Github</Dropdown.Item>
+              <Dropdown.Item href="mailto:snehas9@illinois.edu">Email</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </div>
       </nav>
-
 
       <header className="App-header" id="about">
         <div className="intro">
@@ -498,10 +511,7 @@ function App() {
               />
               <h1 style={{ textAlign: "center" }}>
                 <ReactTyped
-                  strings={[
-                    "Hi! I'm Sneha :)",
-                    "Welcome to my website!",
-                  ]}
+                  strings={["Hi! I'm Sneha :)", "Welcome to my website!"]}
                   typeSpeed={100}
                   loop
                   backSpeed={50}
@@ -510,24 +520,35 @@ function App() {
                 />
               </h1>
             </div>
-            <h7 className="bio" style={{marginBottom: 15}}>currently, i am...</h7>
+            <h7 className="bio" style={{ marginBottom: 15 }}>
+              currently, i am...
+            </h7>
             <div className="bioBullets">
-            <li>a senior studying computer science and statistics at the  
-              University of Illinois at Urbana-Champaign</li>
-             <li>working on a NLP project studying academic language in citations with{' '}
-              <a style={{color: "darkgreen", fontWeight: "bold"}} href="https://talaugust.github.io/" target="_blank" rel="noopener noreferrer">
-                 Dr. Tal August
-              </a>
-            </li>
+              <li>
+                a senior studying computer science and statistics at the
+                University of Illinois at Urbana-Champaign
+              </li>
+              <li>
+                working on a NLP project studying academic language in citations
+                with{" "}
+                <a
+                  style={{ color: "darkgreen", fontWeight: "bold" }}
+                  href="https://talaugust.github.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dr. Tal August
+                </a>
+              </li>
             </div>
             <div className="button-container">
               <a href={resume} download className="download-btn">
-          <img
-            src="/resume.png"
-            alt="resume"
-            style={{ width: '2.2em', height: '2.2em'}}
-          />
-        </a>
+                <img
+                  src="/resume.png"
+                  alt="resume"
+                  style={{ width: "2.2em", height: "2.2em" }}
+                />
+              </a>
               <a
                 href="https://github.com/ssundr"
                 className="download-btn"
@@ -537,7 +558,7 @@ function App() {
                 <FaGithub size={32} color="#171515" />
               </a>
               <a
-                href="https://linkedin.com/in/ssundar11"
+                href="https://linkedin.com/in/ssundr"
                 className="download-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -545,7 +566,7 @@ function App() {
                 <FaLinkedin size={32} color="#0A66C2" />
               </a>
               <a href="mailto:snehas9@illinois.edu" className="download-btn">
-              <FaEnvelope size={32} color="#D44638" />
+                <FaEnvelope size={32} color="#D44638" />
               </a>
             </div>
           </div>
@@ -588,13 +609,13 @@ function App() {
                 </h3>
                 <p>{project.description}</p>
                 <p>
-                <p className="tech-icons">
+                  <p className="tech-icons">
                     {project.techUsedIcons.map((icon, i) => (
                       <span key={i} className="tech-icon">
                         {icon}
                       </span>
                     ))}
-                </p>
+                  </p>
                 </p>
               </div>
               <img
@@ -641,12 +662,12 @@ function App() {
               />
               <h3>{exp.company}</h3>
               <p>{exp.role}</p>
-              <i><p>{exp.time}</p></i>
+              <i>
+                <p>{exp.time}</p>
+              </i>
             </div>
           ))}
         </div>
-
-
       </section>
 
       {/* tech stack */}
@@ -723,29 +744,29 @@ function App() {
 
       {/* footer */}
       <footer className="App-footer">
-  <p>Connect with me!</p>
-  <div className="social-icons">
-    <a
-      href="https://www.linkedin.com/in/ssundar11"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="LinkedIn"
-    >
-      <FaLinkedin size={32} color="#0A66C2" />
-    </a>
-    <a href="mailto:snehas9@illinois.edu" aria-label="Email">
-      <FaEnvelope size={32} color="#D44638" />
-    </a>
-    <a
-      href="https://github.com/ssundr"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="GitHub"
-    >
-      <FaGithub size={32} color="#171515" />
-    </a>
-  </div>
-</footer>
+        <p>Connect with me!</p>
+        <div className="social-icons">
+          <a
+            href="https://www.linkedin.com/in/ssundr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={32} color="#0A66C2" />
+          </a>
+          <a href="mailto:snehas9@illinois.edu" aria-label="Email">
+            <FaEnvelope size={32} color="#D44638" />
+          </a>
+          <a
+            href="https://github.com/ssundr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub size={32} color="#171515" />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
