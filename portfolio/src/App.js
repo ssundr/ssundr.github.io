@@ -487,7 +487,7 @@ function App() {
           <a href="#projects">Projects</a>
           <a href="mailto:snehas9@illinois.edu">Contact Me</a>{" "}
           {/* replace with drop down*/}
-          <Dropdown style={{display: flex}}>
+          <Dropdown style={{display: "flex"}}>
             <Dropdown.Toggle variant="success" id="dropdown-basic">
               Contact Me
             </Dropdown.Toggle>
