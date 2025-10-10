@@ -486,17 +486,6 @@ function App() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="mailto:snehas9@illinois.edu">Contact Me</a>{" "}
-          {/* replace with drop down*/}
-          <Dropdown style={{display: "flex"}}>
-            <Dropdown.Toggle variant="success" id="dropdown-basic">
-              Contact Me
-            </Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item href="https://linkedin.com/in/ssundr">LinkedIn</Dropdown.Item>
-              <Dropdown.Item href="https://github.com/ssundr">Github</Dropdown.Item>
-              <Dropdown.Item href="mailto:snehas9@illinois.edu">Email</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
         </div>
       </nav>
 
