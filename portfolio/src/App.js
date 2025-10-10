@@ -6,8 +6,6 @@ import { DiGoogleCloudPlatform } from "react-icons/di";
 import { SiPytorch, SiMongodb } from "react-icons/si";
 import { SiJupyter } from "react-icons/si";
 
-import Dropdown from "react-bootstrap/Dropdown";
-
 import {
   SiDjango,
   SiTensorflow,
