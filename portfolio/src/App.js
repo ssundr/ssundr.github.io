@@ -559,7 +559,7 @@ function App() {
           </div>
           <div className="graph-node-container">
             <div className="node" data-node="NLP">
-              Natural Language Processing
+              Full-Stack Development
             </div>
             <div className="node" data-node="AI">
               Artificial Intelligence
@@ -568,7 +568,7 @@ function App() {
               Human-Centered Computing
             </div>
             <div className="node" data-node="Machine Learning">
-              Machine Learning
+              Distributed Systems
             </div>
             <div className="node" data-node="Research">
               Big Data Analytics
