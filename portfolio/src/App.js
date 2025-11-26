@@ -186,9 +186,9 @@ function App() {
       url: "https://stat.illinois.edu/academics/courses/stat400",
     },
     {
-      name: "Statistical Modeling",
-      number: "STAT 425",
-      url: "https://stat.illinois.edu/academics/courses/stat425",
+      name: "Distributed Systems",
+      number: "CS 425",
+      url: "https://cs.illinois.edu/academics/courses/cs425",
     },
     {
       name: "Discrete Structures",
